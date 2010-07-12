@@ -1,0 +1,18 @@
+<table> 
+  <tr> 
+    <td> 
+      <strong>Name:</strong>&nbsp;
+    </td>
+    <td>
+      <%= h @user.name %><br /> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Url:</strong>&nbsp;
+    </td> 
+    <td>
+      <%= link_to user_path(@user), @user%>
+    </td>
+  </tr> 
+</table>

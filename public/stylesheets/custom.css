@@ -1,0 +1,125 @@
+.container { 
+width: 900px; 
+padding-left: 200px;
+} 
+body { 
+/*background: #cff; */
+} 
+#header { 
+padding-top: 20px;
+background:#F2F2F2;
+padding-bottom: 10px; 
+padding-right: 15px;
+padding-left: 15px;
+} 
+#header img { 
+padding: 1em; 
+background: #fff; 
+} 
+#content { 
+margin-top: 1em; 
+font-size: 120%; 
+padding-left: 20px; 
+background: #fff; 
+} 
+/* Links */ 
+a { 
+color: #666666; 
+text-decoration: none; 
+} 
+a:hover { 
+color: #05EBA62; 
+text-decoration: underline; 
+} 
+a:visited { 
+color: #069; 
+}
+
+/* navigation*/ 
+.navigation { 
+float: right; 
+} 
+.navigation { 
+padding: 0 0.7em; 
+white-space: nowrap; 
+} 
+ul.navigation { 
+margin: 0; 
+} 
+.navigation li { 
+list-style-type: none; 
+display: inline-block; 
+padding: 0.2em 0; 
+} 
+.navigation li a { 
+padding: 0 5px;  
+} 
+.navigation li a:visited { 
+color: #666666; 
+} 
+.navigation li a:hover { 
+text-decoration: underline; 
+color: #05EBA62; 
+} 
+
+/* Round corners */ 
+.round { 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px; 
+border-radius: 10px; 
+} 
+
+/* User show page */ 
+table.profile { 
+width: 100%; 
+margin-bottom: 0; 
+} 
+td.main { 
+width: 70%; 
+padding: 1em; 
+} 
+td.sidebar { 
+width: 30%; 
+padding: 1em; 
+vertical-align: top; 
+background: #ffc; 
+} 
+
+div.field, div.actions { 
+margin-bottom: 10px; 
+} 
+
+.fieldWithErrors { 
+padding: 2px; 
+background-color: red; 
+display: table; 
+} 
+.fieldWithErrors label { 
+color: #fff; 
+} 
+#errorExplanation { 
+width: 400px; 
+border: 2px solid red; 
+padding: 7px; 
+padding-bottom: 12px; 
+margin-bottom: 20px; 
+background-color: #f0f0f0; 
+} 
+#errorExplanation h2 { 
+text-align: left; 
+font-weight: bold; 
+padding: 5px 5px 5px 15px; 
+font-size: 12px; 
+margin: -7px; 
+background-color: #c00; 
+color: #fff; 
+} 
+#errorExplanation p { 
+color: #333; 
+margin-bottom: 0; 
+padding: 5px; 
+} 
+#errorExplanation ul li { 
+font-size: 12px; 
+list-style: square; 
+} 

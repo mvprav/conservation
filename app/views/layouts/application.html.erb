@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <title><%= title %></title> 
+    <%= stylesheet_link_tag 'screen', :media => 'screen' %> 
+    <%= stylesheet_link_tag 'print', :media => 'print' %> 
+
+    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]--> 
+    <%= stylesheet_link_tag 'custom', :media => 'screen' %> 
+  </head> 
+  <body> 
+    <div class="container"> 
+      <div id="header" class=" round"> 
+	<%= image_tag("logo.png", :alt => "Sample App", :class => "round") %> 
+	<ul class="navigation round"> 
+	  <li><%= link_to "Home", '#' %></li> 
+	  <li><%= link_to "Understand Threats", '#' %></li> 
+	  <li><%= link_to "Report a Threat", '#' %></li> 
+	  <li><%= link_to "Reports", '#' %></li> 
+	  <li><%= link_to "FAQ", '#' %></li> 
+	  <li><%= link_to "Contact", '#' %></li> 
+	  <li><%= link_to "Sign in", '#' %></li> 
+	</ul> 
+      </div> 
+      <div id="content" class="round">
+	<% flash.each do |key, value| %> 
+            <div class="flash <%= key %>"><%= value %></div> 
+	    <% end %> 
+
+	<%= yield %> 
+      </div>
+      <div align="center">
+	<div>
+	  <a linkindex="11" href="http://www.foxdart.com/conservation/privacy.html">Privacy Policy </a> |
+	  <a linkindex="12" href="http://www.foxdart.com/conservation/terms.html">Terms of Use</a> |
+	  ©2010 Conservation Threats - Web Design by 
+	  <a linkindex="13" href="http://www.foxdart.com/">Foxdart</a>
+	</div>
+      </div>
+    </div> 
+    <%= debug(params) if Rails.env.development?%>
+  </body> 
+</html> 
