@@ -1,0 +1,1995 @@
+# Logfile created on Tue Jul 13 00:09:31 +0530 2010  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 18:39:33', 'user@example.com', '2010-07-12 18:39:33')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.8ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:48', 'user@example.com', '2010-07-12 19:10:48')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:48', 'user@example.com', '2010-07-12 19:10:48')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:48', 'user@example.com', '2010-07-12 19:10:48')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:48', 'user@example.com', '2010-07-12 19:10:48')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:10:49', 'user@example.com', '2010-07-12 19:10:49')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:37', NULL, 'user@example.com', '2010-07-12 19:16:37')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:37', NULL, 'user@example.com', '2010-07-12 19:16:37')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:37', NULL, 'user@example.com', '2010-07-12 19:16:37')[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'ac6e39147d9f165ebd91f8c57805f13fc7aaa7e450ff641ea5a8a1a779fcdebb', "updated_at" = '2010-07-12 19:16:37' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:37', NULL, 'user@example.com', '2010-07-12 19:16:37')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:16:38', NULL, 'user@example.com', '2010-07-12 19:16:38')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:36:40', NULL, 'a@a.com', '2010-07-12 19:36:40')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:06:40) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:36:40', NULL, 'a@a.com', '2010-07-12 19:36:40')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:06:40) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:06:40) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 59ms (View: 59, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:06:40) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:36:40', NULL, 'a@a.com', '2010-07-12 19:36:40')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:06:40) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:36:40", updated_at: "2010-07-12 19:36:40", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:36:41', NULL, 'a@a.com', '2010-07-12 19:36:41')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:06:41) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:36:41", updated_at: "2010-07-12 19:36:41", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 2ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:06:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:06:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 01:06:41) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /spec/integration/layout_links_spec.rb:4
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+  rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+  rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+  rspec (1.3.0) bin/spec:5
+
+Rendering rescues/layout (not_found)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'e9ed443c828bb86f48d242656653049ccb77c207fa495b19623880af85918e39', "updated_at" = '2010-07-12 19:36:41' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:36:41', NULL, 'user@example.com', '2010-07-12 19:36:41')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:36:41', NULL, 'a@a.com', '2010-07-12 19:36:41')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:06:41) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 8) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:36:41', NULL, 'a@a.com', '2010-07-12 19:36:41')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:06:41) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:06:41) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:06:41) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:06:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:06:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:46:48', NULL, 'a@a.com', '2010-07-12 19:46:48')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:16:48) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:46:48', NULL, 'a@a.com', '2010-07-12 19:46:48')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:16:48) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:16:48) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:16:49) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:46:49', NULL, 'a@a.com', '2010-07-12 19:46:49')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:16:49) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:46:49", updated_at: "2010-07-12 19:46:49", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:46:49', NULL, 'a@a.com', '2010-07-12 19:46:49')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:16:49) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:46:49", updated_at: "2010-07-12 19:46:49", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:16:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:16:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 01:16:49) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /spec/integration/layout_links_spec.rb:4
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+  rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+  rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+  rspec (1.3.0) bin/spec:5
+
+Rendering rescues/layout (not_found)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '6eb49a5e68f2752a345ca04d6c948de4ce55e407611ace241024c2dbb6d9e02e', "updated_at" = '2010-07-12 19:46:49' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:46:49', NULL, 'user@example.com', '2010-07-12 19:46:49')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:46:49', NULL, 'a@a.com', '2010-07-12 19:46:49')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:16:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 8) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:46:49', NULL, 'a@a.com', '2010-07-12 19:46:49')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:16:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:16:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:16:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:16:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:16:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:48:39', NULL, 'a@a.com', '2010-07-12 19:48:39')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:48:39', NULL, 'a@a.com', '2010-07-12 19:48:39')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:48:39', NULL, 'a@a.com', '2010-07-12 19:48:39')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:18:39) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:48:39", updated_at: "2010-07-12 19:48:39", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:48:39', NULL, 'a@a.com', '2010-07-12 19:48:39')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:18:39) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:48:39", updated_at: "2010-07-12 19:48:39", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:18:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:18:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 01:18:39) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /spec/integration/layout_links_spec.rb:4
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+  rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+  rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+  rspec (1.3.0) bin/spec:5
+
+Rendering rescues/layout (not_found)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'fb3704bf4fe2be2722c14fecd9e890999b27b567edb2a448ae5bc3c00b4bb35c', "updated_at" = '2010-07-12 19:48:39' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:48:39', NULL, 'user@example.com', '2010-07-12 19:48:39')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:48:39', NULL, 'a@a.com', '2010-07-12 19:48:39')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 8) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:48:39', NULL, 'a@a.com', '2010-07-12 19:48:39')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:18:39) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:18:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:18:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:49:03', NULL, 'a@a.com', '2010-07-12 19:49:03')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:19:03) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:49:03', NULL, 'a@a.com', '2010-07-12 19:49:03')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:19:03) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:19:03) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 01:19:03) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:49:03', NULL, 'a@a.com', '2010-07-12 19:49:03')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:19:03) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:49:03", updated_at: "2010-07-12 19:49:03", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:49:03', NULL, 'a@a.com', '2010-07-12 19:49:03')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 01:19:03) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 19:49:03", updated_at: "2010-07-12 19:49:03", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:19:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 01:19:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 01:19:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /spec/integration/layout_links_spec.rb:4
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+  rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+  rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+  rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+  rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+  rspec (1.3.0) bin/spec:5
+
+Rendering rescues/layout (not_found)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '092af342d41a9d888e240c07a41540179d7b9d37a85d6619c57e7dfe3b70e9b0', "updated_at" = '2010-07-12 19:49:03' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:03', NULL, 'user@example.com', '2010-07-12 19:49:03')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:04', NULL, 'user@example.com', '2010-07-12 19:49:04')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 19:49:04', NULL, 'user@example.com', '2010-07-12 19:49:04')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:49:04', NULL, 'a@a.com', '2010-07-12 19:49:04')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:19:04) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 8) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:49:04', NULL, 'a@a.com', '2010-07-12 19:49:04')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:19:04) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:19:04) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:19:04) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:19:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:19:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:52:16', NULL, 'a@a.com', '2010-07-12 19:52:16')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:22:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:52:16', NULL, 'a@a.com', '2010-07-12 19:52:16')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:22:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:22:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:22:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:22:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:22:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:55:48', NULL, 'a@a.com', '2010-07-12 19:55:48')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:25:48) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:55:48', NULL, 'a@a.com', '2010-07-12 19:55:48')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:25:48) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:25:48) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:25:48) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:25:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:25:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:56:06', NULL, 'a@a.com', '2010-07-12 19:56:06')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:26:06) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:56:06', NULL, 'a@a.com', '2010-07-12 19:56:06')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:26:06) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:26:07) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:26:07) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:26:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:26:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:59:30', NULL, 'a@a.com', '2010-07-12 19:59:30')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:30) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:59:30', NULL, 'a@a.com', '2010-07-12 19:59:30')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:30) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:30) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:30) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:29:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:29:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:59:43', NULL, 'a@a.com', '2010-07-12 19:59:43')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:43) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 19:59:43', NULL, 'a@a.com', '2010-07-12 19:59:43')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:43) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:43) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:29:43) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:29:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:29:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:01:07', NULL, 'a@a.com', '2010-07-12 20:01:07')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:07) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:01:07', NULL, 'a@a.com', '2010-07-12 20:01:07')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:07) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:07) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:07) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:31:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:31:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:01:36', NULL, 'a@a.com', '2010-07-12 20:01:36')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:36) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:01:36', NULL, 'a@a.com', '2010-07-12 20:01:36')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:36) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:36) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:31:36) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:31:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:31:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:06:12', NULL, 'a@a.com', '2010-07-12 20:06:12')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:12) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:06:12', NULL, 'a@a.com', '2010-07-12 20:06:12')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:12) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:13) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:13) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:36:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:36:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:06:49', NULL, 'a@a.com', '2010-07-12 20:06:49')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:06:49', NULL, 'a@a.com', '2010-07-12 20:06:49')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+Redirected to http://test.host/users/1
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:36:49) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:36:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:36:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:08:23', NULL, 'a@a.com', '2010-07-12 20:08:23')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:38:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:08:23', NULL, 'a@a.com', '2010-07-12 20:08:23')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:38:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:38:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 1) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:38:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:38:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:38:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:09:56', NULL, 'a@a.com', '2010-07-12 20:09:56')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:39:56) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '96b7927f110e63e48d407aee05c29903cd4bb9e07e037def9fbeddf949961e01', "updated_at" = '2010-07-12 20:09:56' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:09:56', NULL, 'a@a.com', '2010-07-12 20:09:56')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:39:56) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '96b7927f110e63e48d407aee05c29903cd4bb9e07e037def9fbeddf949961e01', "updated_at" = '2010-07-12 20:09:56' WHERE "id" = 1[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:39:56) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 7, DB: 2) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:39:56) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:39:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:39:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:12:23', NULL, 'a@a.com', '2010-07-12 20:12:23')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:42:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '683474448fc33cad036fb317ccf259a39b2d673e66d69541b5c67c60002c0986', "updated_at" = '2010-07-12 20:12:23' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '--- :remember_token
+') LIMIT 1[0m
+Redirected to http://test.host/users/1
+Completed in 100ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:12:23', NULL, 'a@a.com', '2010-07-12 20:12:23')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:42:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '683474448fc33cad036fb317ccf259a39b2d673e66d69541b5c67c60002c0986', "updated_at" = '2010-07-12 20:12:23' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '--- :remember_token
+') LIMIT 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:42:23) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:42:24) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:42:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:42:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:15:16', NULL, 'a@a.com', '2010-07-12 20:15:16')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:45:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '590055eba810dc6c19aacb03386e1c08d352e802eb6a6a62280917222b7f9bf8', "updated_at" = '2010-07-12 20:15:16' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:15:17', NULL, 'a@a.com', '2010-07-12 20:15:17')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:45:17) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '0174f6acec81e5a3b375fa24b6d5a7733c0afbf15c5a066189a7c53410847bab', "updated_at" = '2010-07-12 20:15:17' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:45:17) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:45:17) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:45:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:45:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:16:21', NULL, 'a@a.com', '2010-07-12 20:16:21')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:46:21) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'a1a2ea9389bc231e1b65d4ce210297dee76c61f1c2297b24f22581b50b9e8323', "updated_at" = '2010-07-12 20:16:21' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 20:16:21', NULL, 'a@a.com', '2010-07-12 20:16:21')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:46:21) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = 'a1a2ea9389bc231e1b65d4ce210297dee76c61f1c2297b24f22581b50b9e8323', "updated_at" = '2010-07-12 20:16:21' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:46:21) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 01:46:21) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:46:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 01:46:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:15:37', NULL, 'a@a.com', '2010-07-12 22:15:37')[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-07-13 03:45:37) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:15:37', NULL, 'a@a.com', '2010-07-12 22:15:37')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:45:37) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'b22345334b1e2cc10c7f8a7568c65594aa044661d90f740aa129a3ac835f02b6', "updated_at" = '2010-07-12 22:15:37' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:15:37', NULL, 'a@a.com', '2010-07-12 22:15:37')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:45:37) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = 'b22345334b1e2cc10c7f8a7568c65594aa044661d90f740aa129a3ac835f02b6', "updated_at" = '2010-07-12 22:15:37' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:45:37) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:45:37) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 03:45:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 03:45:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:19:29', NULL, 'a@a.com', '2010-07-12 22:19:29')[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-07-13 03:49:29) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:19:29', NULL, 'a@a.com', '2010-07-12 22:19:29')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:49:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'a82d574246867ffd0808540f55859129d4fd30b7e552075e585e20423bc1b87d', "updated_at" = '2010-07-12 22:19:29' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:19:29', NULL, 'a@a.com', '2010-07-12 22:19:29')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:49:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = 'a82d574246867ffd0808540f55859129d4fd30b7e552075e585e20423bc1b87d', "updated_at" = '2010-07-12 22:19:29' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:49:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:49:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 03:49:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 03:49:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:23:44', NULL, 'a@a.com', '2010-07-12 22:23:44')[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-07-13 03:53:44) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/signout]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:23:44', NULL, 'a@a.com', '2010-07-12 22:23:44')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:53:44) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '1866984c9a2c21f8f190f7507e4cb44484fccb9b5177fe77680ceed63f7913df', "updated_at" = '2010-07-12 22:23:44' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:23:44', NULL, 'a@a.com', '2010-07-12 22:23:44')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:53:44) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '1866984c9a2c21f8f190f7507e4cb44484fccb9b5177fe77680ceed63f7913df', "updated_at" = '2010-07-12 22:23:44' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:53:44) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 03:53:44) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 03:53:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 03:53:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:38:10', NULL, 'a@a.com', '2010-07-12 22:38:10')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:08:10) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '5b82c5c643ca1fb79fc7dd9cdb91c40c49a08453481ee22538a6103efe529643', "updated_at" = '2010-07-12 22:38:10' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:38:10', NULL, 'a@a.com', '2010-07-12 22:38:10')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:08:10) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '5b82c5c643ca1fb79fc7dd9cdb91c40c49a08453481ee22538a6103efe529643', "updated_at" = '2010-07-12 22:38:10' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:38:10', NULL, 'a@a.com', '2010-07-12 22:38:10')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:08:10) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '5b82c5c643ca1fb79fc7dd9cdb91c40c49a08453481ee22538a6103efe529643', "updated_at" = '2010-07-12 22:38:10' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:08:10) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:08:10) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:38:10', NULL, 'a@a.com', '2010-07-12 22:38:10')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 04:08:10) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 22:38:10", updated_at: "2010-07-12 22:38:10", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:38:10', NULL, 'a@a.com', '2010-07-12 22:38:10')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 04:08:10) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 22:38:10", updated_at: "2010-07-12 22:38:10", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 04:08:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 04:08:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2010-07-13 04:28:25) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+Completed in 48ms (View: 46, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '49dc878e841d5cc8770eea7d00f7ad770cf4eaded8195fec57b0ac8c04b82598', "updated_at" = '2010-07-12 22:58:25' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-12 22:58:25', NULL, 'user@example.com', '2010-07-12 22:58:25')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:25', NULL, 'a@a.com', '2010-07-12 22:58:25')[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-07-13 04:28:25) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://test.host/
+Completed in 2ms (DB: 8) | 302 Found [http://test.host/signout]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:25', NULL, 'a@a.com', '2010-07-12 22:58:25')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '49dc878e841d5cc8770eea7d00f7ad770cf4eaded8195fec57b0ac8c04b82598', "updated_at" = '2010-07-12 22:58:25' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:25', NULL, 'a@a.com', '2010-07-12 22:58:25')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '49dc878e841d5cc8770eea7d00f7ad770cf4eaded8195fec57b0ac8c04b82598', "updated_at" = '2010-07-12 22:58:25' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 04:28:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 04:28:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:25', NULL, 'a@a.com', '2010-07-12 22:58:25')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '49dc878e841d5cc8770eea7d00f7ad770cf4eaded8195fec57b0ac8c04b82598', "updated_at" = '2010-07-12 22:58:25' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:25', NULL, 'a@a.com', '2010-07-12 22:58:25')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '49dc878e841d5cc8770eea7d00f7ad770cf4eaded8195fec57b0ac8c04b82598', "updated_at" = '2010-07-12 22:58:25' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:25', NULL, 'a@a.com', '2010-07-12 22:58:25')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '49dc878e841d5cc8770eea7d00f7ad770cf4eaded8195fec57b0ac8c04b82598', "updated_at" = '2010-07-12 22:58:25' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:28:25) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 04:28:26) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:26', NULL, 'a@a.com', '2010-07-12 22:58:26')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 04:28:26) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 22:58:26", updated_at: "2010-07-12 22:58:26", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-12 22:58:26', NULL, 'a@a.com', '2010-07-12 22:58:26')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 04:28:26) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-12 22:58:26", updated_at: "2010-07-12 22:58:26", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 04:28:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 04:28:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2010-07-13 13:31:55) [GET]
+  Parameters: {"action"=>"show", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/show
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'a5b7fc548aff15ea8b3e1cec03f72fdc208cca79c5d53562eb9b427c94a993a4', "updated_at" = '2010-07-13 08:01:55' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'wrong email') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('Example User', 'password', '2010-07-13 08:01:55', NULL, 'user@example.com', '2010-07-13 08:01:55')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:55', NULL, 'a@a.com', '2010-07-13 08:01:55')[0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-07-13 13:31:55) [DELETE]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://test.host/
+Completed in 2ms (DB: 7) | 302 Found [http://test.host/signout]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:55', NULL, 'a@a.com', '2010-07-13 08:01:55')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 13:31:55) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "controller"=>"sessions"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'a5b7fc548aff15ea8b3e1cec03f72fdc208cca79c5d53562eb9b427c94a993a4', "updated_at" = '2010-07-13 08:01:55' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:55', NULL, 'a@a.com', '2010-07-13 08:01:55')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 13:31:55) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"a@a.com"}, "controller"=>"sessions"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = 'a5b7fc548aff15ea8b3e1cec03f72fdc208cca79c5d53562eb9b427c94a993a4', "updated_at" = '2010-07-13 08:01:55' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/sessions?session%5Bemail%5D=a%40a.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>""}, "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=&session%5Bpassword%5D=]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 13:31:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2010-07-13 13:31:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:56', NULL, 'a@a.com', '2010-07-13 08:01:56')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '003420af3a192e0bf5d9701810c16c9461a885658be3fee9d7254485aad8b54e', "updated_at" = '2010-07-13 08:01:56' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:56', NULL, 'a@a.com', '2010-07-13 08:01:56')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.1ms)[0m   [0mUPDATE "users" SET "remember_token" = '003420af3a192e0bf5d9701810c16c9461a885658be3fee9d7254485aad8b54e', "updated_at" = '2010-07-13 08:01:56' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:56', NULL, 'a@a.com', '2010-07-13 08:01:56')[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"user"=>{"name"=>"praveen", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"a@a.com"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.1ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '003420af3a192e0bf5d9701810c16c9461a885658be3fee9d7254485aad8b54e', "updated_at" = '2010-07-13 08:01:56' WHERE "id" = 1[0m
+Redirected to http://test.host/users/1
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=a%40a.com&user%5Bname%5D=praveen&user%5Bpassword%5D=password&user%5Bpassword_confirmation%5D=password]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-07-13 13:31:56) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:56', NULL, 'a@a.com', '2010-07-13 08:01:56')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 13:31:56) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-13 08:01:56", updated_at: "2010-07-13 08:01:56", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'a@a.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "updated_at", "remember_token", "email", "created_at") VALUES('praveen', 'password', '2010-07-13 08:01:56', NULL, 'a@a.com', '2010-07-13 08:01:56')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-07-13 13:31:56) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 1, name: "praveen", email: "a@a.com", created_at: "2010-07-13 08:01:56", updated_at: "2010-07-13 08:01:56", encrypted_password: "password", remember_token: nil>, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 13:31:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-07-13 13:31:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]

@@ -14,13 +14,17 @@
       <div id="header" class=" round"> 
 	<%= image_tag("logo.png", :alt => "Sample App", :class => "round") %> 
 	<ul class="navigation round"> 
-	  <li><%= link_to "Home", '#' %></li> 
+	  <li><%= link_to "Home", home_path %></li> 
 	  <li><%= link_to "Understand Threats", '#' %></li> 
 	  <li><%= link_to "Report a Threat", '#' %></li> 
 	  <li><%= link_to "Reports", '#' %></li> 
 	  <li><%= link_to "FAQ", '#' %></li> 
-	  <li><%= link_to "Contact", '#' %></li> 
-	  <li><%= link_to "Sign in", '#' %></li> 
+	  <li><%= link_to "Contact", '#' %></li>
+	  <% if signed_in? %>
+	  <li><%= link_to "Sign out", signout_path, :method => :delete%>
+	  <% else %>
+	  <li><%= link_to "Sign in", signin_path %></li>
+	  <% end%>
 	</ul> 
       </div> 
       <div id="content" class="round">

@@ -54,6 +54,8 @@ describe SessionsController do
 
       it "should sign the user in" do
         post :create ,:session =>@attr
+        controller.current_user.should==@user
+        controller.should be_signed_in
       end 
 
       it "should redirect to user show page" do
@@ -61,5 +63,15 @@ describe SessionsController do
         response.should redirect_to(user_path(@user))
       end 
     end
+  end
+
+  describe "Delete 'destroy'" do
+    it "should sign a user out" do
+      test_sign_in(Factory(:user))
+      controller.should be_signed_in
+      delete :destroy
+      controller.should_not be_signed_in
+      response.should redirect_to(home_path)
+    end 
   end
 end

@@ -11,6 +11,8 @@
 #  encrypted_password :string(255)
 #
 
+require 'digest'
+
 class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessible :name, :email, :password, :password_confirmation
@@ -24,8 +26,15 @@ class User < ActiveRecord::Base
   before_save :encrypt_password
 
   def has_password?(submitted_password)
-    self.encrypted_password==submitted_password
+    unless submitted_password.nil?
+      self.encrypted_password==submitted_password
+    end
   end 
+  
+  def remember_me!
+    self.remember_token=secure_hash("#{id}--#{Time.now.utc}")
+    save_without_validation
+  end
 
   def self.authenticate(email,submitted_password)
     user=find_by_email(email)
@@ -36,7 +45,13 @@ class User < ActiveRecord::Base
 
   private 
   def encrypt_password
-    self.encrypted_password=password
+    unless password.nil?
+      self.encrypted_password=password
+    end
   end
+  def secure_hash(string)
+    Digest::SHA2.hexdigest(string)
+  end
+
 end
 

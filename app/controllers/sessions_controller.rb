@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
-  def new
+include SessionsHelper
+   def new
     @title="Sign in"
   end
 
@@ -11,11 +12,14 @@ class SessionsController < ApplicationController
       @title="Sign in"
       render :new
     else
+      sign_in user
       redirect_to user
     end
   end
   
   def destroy
+    sign_out
+    redirect_to home_path
   end
 
 end

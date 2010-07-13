@@ -115,5 +115,24 @@ describe User do
       user.should_not be_nil
     end 
   end
+
+  describe "Remember me" do
+    before(:each) do
+      @user=User.create!(@attr)
+    end
+
+    it "should have a remember me token" do
+      @user.should respond_to(:remember_token)
+    end 
+
+    it "should have remember me method" do
+      @user.should respond_to(:remember_me!)
+    end 
+
+    it "should set remember me token" do
+      @user.remember_me!
+      @user.remember_token.should_not be_nil
+    end 
+  end
 end 
 

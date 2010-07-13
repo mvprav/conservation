@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
-  end
+  endc
 
   def self.down
     drop_table :users
