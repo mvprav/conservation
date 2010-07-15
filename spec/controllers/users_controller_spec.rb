@@ -104,7 +104,7 @@ describe UsersController do
         @invalid_attr={:name=>"",:email=>"" }
         @user.should_receive(:update_attributes).and_return(false)
       end
-  
+      
       it "should render edit page" do
         put :update , :id=>@user,:user=>{ }
         response.should render_template(:edit)
@@ -124,7 +124,7 @@ describe UsersController do
         @user.should_receive(:update_attributes).and_return(true)
       end
 
-      it "should should redirect to user home page" do
+      it "should redirect to user show page" do
         put :update , :id=>@user,:user=>@attr
         response.should redirect_to(user_path(@user))
       end 
@@ -132,6 +132,38 @@ describe UsersController do
       it "should have a flash message" do
         put :update , :id=>@user,:user=>@attr
         flash[:success] = 'Updated'
+      end 
+    end
+  end
+  describe "authentication of user edit/update pages" do
+    before(:each) do
+      @user=Factory(:user)
+    end
+    describe "for non-signed in user" do
+      it "should deny access to 'Edit'" do
+        get :edit, :id=>@user
+        response.should redirect_to(signin_path)
+      end 
+
+      it "should deny access to update" do
+        get :update,:id=>@user
+        response.should redirect_to(signin_path)
+      end 
+    end
+    describe "signed in user" do
+      before(:each) do
+        wrong_user=Factory(:user,:email=>"wrong@user.com")
+        test_sign_in wrong_user
+      end
+
+      it "should require matching user for 'Edit'" do
+        get :edit,:id=>@user
+        response.should redirect_to(home_path)
+      end 
+      
+      it "should require match user for update" do
+        put :update , :id=>@user,:user=>{ }
+        response.should redirect_to(home_path)
       end 
     end
   end
