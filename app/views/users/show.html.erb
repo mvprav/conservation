@@ -9,10 +9,18 @@
   </tr>
   <tr>
     <td>
-      <strong>Url:</strong>&nbsp;
+      <strong>Email</strong>&nbsp;
     </td> 
     <td>
-      <%= link_to user_path(@user), @user%>
+      <%= h @user.email%>
     </td>
   </tr> 
+  <tr>
+    <td>
+      <strong>Edit</strong>
+    </td>
+    <td>
+      <%= link_to edit_user_path,  edit_user_path %>
+    </td>
+  </tr>
 </table>

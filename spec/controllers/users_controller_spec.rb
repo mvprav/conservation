@@ -75,5 +75,64 @@ describe UsersController do
       end 
     end
   end
-end
 
+  describe "GET 'edit'" do
+    before(:each) do
+      @user=Factory(:user)
+      test_sign_in @user
+    end
+
+    it "should be successful" do
+      get :edit, :id=>@user
+      response.should be_success
+    end 
+
+    it "should have right title" do
+      get :edit, :id=>@user
+      response.should have_tag("title",/edit user/i)
+    end 
+  end
+
+  describe "PUT 'edit'" do
+    before(:each) do
+      @user=Factory(:user)
+      test_sign_in @user
+      User.should_receive(:find).with(@user).and_return(@user)
+    end
+    describe "failure" do
+      before(:each) do
+        @invalid_attr={:name=>"",:email=>"" }
+        @user.should_receive(:update_attributes).and_return(false)
+      end
+  
+      it "should render edit page" do
+        put :update , :id=>@user,:user=>{ }
+        response.should render_template(:edit)
+      end 
+
+      it "should have right title" do
+        put :update , :id=>@user,:user=>{ }
+        response.should have_tag("title",/Edit user/i)
+      end 
+    end
+    describe "Success" do
+      before(:each) do
+        @attr={
+          :name=>"new name",:email=>"new@example.com",
+          :password=>"something",:password_confirmation=>"something"
+        }
+        @user.should_receive(:update_attributes).and_return(true)
+      end
+
+      it "should should redirect to user home page" do
+        put :update , :id=>@user,:user=>@attr
+        response.should redirect_to(user_path(@user))
+      end 
+
+      it "should have a flash message" do
+        put :update , :id=>@user,:user=>@attr
+        flash[:success] = 'Updated'
+      end 
+    end
+  end
+end
