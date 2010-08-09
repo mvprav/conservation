@@ -1,0 +1,22 @@
+<table>
+  <tr>
+  <td>
+  Title
+</td>
+<td>
+Description
+</td>
+  </tr>
+  <%@reports.each do |report|%>
+<tr>
+<td>
+<span><%=report.title %></span>
+  </td>
+<td>
+<span>
+<%=report.description%>
+</span>
+</td>
+
+  <%end%>
+</table>

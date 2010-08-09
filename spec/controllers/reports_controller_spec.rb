@@ -104,5 +104,24 @@ describe ReportsController do
       end 
     end
   end
+
+  describe "Reports GET All" do
+    it "should be successful" do
+      get :index
+      response.should be_success
+    end 
+
+    it "should have right title" do
+      get :index
+      response.should have_tag("title",/Reports/i)
+    end 
+
+    it "should load reports" do
+      @reports_returned=[Factory(:report),Factory(:report,:title=>"some title")]
+      Report.should_receive(:find).with(:all).and_return(@reports_returned)
+      get :index
+      assigns(:reports).should == @reports_returned
+    end
+  end
 end
 

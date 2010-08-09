@@ -6,6 +6,11 @@ class ReportsController < ApplicationController
     deny_access unless signed_in?
   end
 
+  def index
+    @title="Reports"
+    @reports= Report.find(:all)
+  end
+
   def new
     @title="Report Incident"
     @report=Report.new()
@@ -26,4 +31,5 @@ class ReportsController < ApplicationController
     @report=Report.find(params[:id])
     @title=@report.title
   end
+
 end
