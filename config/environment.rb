@@ -38,16 +38,19 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
-	config.gem "sqlite3-ruby", :lib => "sqlite3"
+  config.gem "sqlite3-ruby", :lib => "sqlite3", :version=>">=1.3.1"
+  config.gem "factory_girl",:lib=>false,:version=>">=1.3.2"
+  config.gem "gherkin" :lib=>false, :version=>">=2.1.4"
+
   # config.gem "aws-s3", :lib => "aws/s3"
-	config.gem "rspec", :lib => false, :version => ">= 1.3.0"
-	config.gem "rspec-rails", :lib => false, :version => ">= 1.3.2"
-	config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
-	config.gem 'shoulda', :lib => false, :version => "2.11.1"
-	config.gem 'cucumber', :lib => false
-	config.gem 'cucumber-rails', :lib => false
-	config.gem 'webrat', :lib => false
-	config.gem 'ZenTest', :lib => false
-	config.gem 'database_cleaner', :lib => false		
+  config.gem "rspec", :lib => false, :version => ">= 1.3.0"
+  config.gem "rspec-rails", :lib => false, :version => ">= 1.3.2"
+  config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
+  config.gem 'shoulda', :lib => false, :version => "2.11.1"
+  config.gem 'cucumber', :lib => false
+  config.gem 'cucumber-rails', :lib => false
+  config.gem 'webrat', :lib => false
+  config.gem 'ZenTest', :lib => false
+  config.gem 'database_cleaner', :lib => false		
 					 
 end
