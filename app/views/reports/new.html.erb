@@ -1,0 +1,14 @@
+<h1>Report</h1>
+<% form_for(@report)do |f|%>
+<div class="field">
+	<%=f.label :title%><br>
+	<%=f.text_field :title %>
+</div>
+<div class="field">
+	<%=f.label :description%><br>
+	<%=f.text_field :description%>
+</div>
+<div class="action">
+	<%=f.submit "Create"%>
+</div>
+<% end %>

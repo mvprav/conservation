@@ -1,0 +1,19 @@
+class ReportsController < ApplicationController
+  include SessionsHelper
+
+  def new
+    @title="Report Incident"
+    @report=Report.new()
+  end
+
+  def create
+    @report=Report.new(params[:report])
+    @title="Report Incident"
+    if @report.save
+      redirect_to @report
+      flash[:success]="Incident Reported"
+    else
+      render :new
+    end
+  end
+end

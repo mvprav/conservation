@@ -1,7 +1,7 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -38,4 +38,16 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+	config.gem "sqlite3-ruby", :lib => "sqlite3"
+  # config.gem "aws-s3", :lib => "aws/s3"
+	config.gem "rspec", :lib => false, :version => ">= 1.3.0"
+	config.gem "rspec-rails", :lib => false, :version => ">= 1.3.2"
+	config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
+	config.gem 'shoulda', :lib => false, :version => "2.11.1"
+	config.gem 'cucumber', :lib => false
+	config.gem 'cucumber-rails', :lib => false
+	config.gem 'webrat', :lib => false
+	config.gem 'ZenTest', :lib => false
+	config.gem 'database_cleaner', :lib => false		
+					 
 end
