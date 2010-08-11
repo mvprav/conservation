@@ -1,0 +1,22 @@
+<table>
+  <tr>
+  <td>
+	Title
+  </td>
+<td>
+Description
+</td>
+  </tr>
+  <%@reports.each do |report|%>
+<tr>
+<td>
+<li><%=link_to h(report.title), report%></li>
+  </td>
+<td>
+<span>
+<%=report.description%>
+</span>
+</td>
+</tr>
+  <%end%>
+</table>

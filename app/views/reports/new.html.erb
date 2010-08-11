@@ -1,14 +1,30 @@
 <h1>Report</h1>
 <% form_for(@report)do |f|%>
+<% if @categories!=nil %>
 <div class="field">
-	<%=f.label :title%><br>
-	<%=f.text_field :title %>
+  <%=f.label :categories%><br>
+  <%=f.select(:category_id,@categories.map{|c|[c.name,c.id]})%>
+</div>
+<%end%>
+<% if @locations!=nil %>
+<div class="field">
+  <%=f.label :location%><br>
+  <%=f.select(:location_id,@locations.map{|l|[l.name,l.id]})%>
+</div>
+<%end%>
+<div class="field">
+  <%=f.label :title%><br>
+  <%=f.text_field :title %>
 </div>
 <div class="field">
-	<%=f.label :description%><br>
-	<%=f.text_field :description%>
+  <%=f.label :description%><br>
+  <%=f.text_area :description%>
+</div>
+<div class="field">
+  <%=f.label :incident_date%>
+  <%=f.text_field :incident_date%>
 </div>
 <div class="action">
-	<%=f.submit "Create"%>
+  <%=f.submit "Create"%>
 </div>
 <% end %>

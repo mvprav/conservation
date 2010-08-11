@@ -54,3 +54,4 @@ Rails::Initializer.run do |config|
   config.gem 'database_cleaner', :lib => false		
 					 
 end
+require "will_paginate"

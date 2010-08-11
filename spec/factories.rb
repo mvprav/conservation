@@ -8,4 +8,16 @@ end
 Factory.define :report do |report|
   report.title "some title"
   report.description "description"
+  report.association :category
+  report.association :location
+  report.incident_date Date.today
+end
+
+
+Factory.define :category do |category|
+  category.name "forest fire"
+end
+
+Factory.define :location do |location|
+  location.name "nagarhole"
 end

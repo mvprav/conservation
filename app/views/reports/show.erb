@@ -8,11 +8,19 @@
     </td>
   </tr>
   <tr>
-  <td>
-  <strong>Description:</strong>&nbsp;
-  </td>
-  <td>
-  <%=h @report.description %>
-  </td>
+    <td>
+      <strong>Description:</strong>&nbsp;
+    </td>
+    <td>
+      <%=h @report.description %>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Category</strong>&nbsp;</td>
+    <td><%=h @report.category.name%></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong>&nbsp;</td>
+    <td><%=h @report.location.name%></td>
   </tr>
 </table>
