@@ -26,3 +26,4 @@ trollop -v 1.16.2
 webrat -v 0.7.1
 ZenTest -v 4.3.3
 will_paginate (2.3.14)
+faker (0.3.1)
