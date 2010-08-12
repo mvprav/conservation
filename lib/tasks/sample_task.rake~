@@ -1,0 +1,20 @@
+require 'faker'
+
+namespace :db do
+  desc "Fill database with sample data"
+  task :populate => :environment do
+    Rake::Task['db:reset'].invoke
+    Report.create!(:title => "sample title",
+                 :description=>"some description")
+    99.times do |n|
+      description = "some description-#{n+1}"
+      title="title-#{n+1}"
+      Report.create!(:title => title,
+                    :description=>description)
+    end
+
+    Category.create(:name=>"Cattle in Park")
+    Location.create(:name=>"Naraghole")
+  end
+
+end

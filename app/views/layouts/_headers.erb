@@ -1,0 +1,25 @@
+<div id="header-outer" class="rounded-10">
+        
+  <h1><a href="http://www.foxdart.com/conservation/index.html" title="Conservation Threats" id="logo"></a></h1>
+        
+  <div id="header-login">
+    <% if signed_in? %>
+    <%= link_to "Sign out", signout_path, :method => :delete%>
+    <% else %>
+    <%= link_to "Sign in", signin_path %>
+    <% end%> | 
+    <a href="http://www.foxdart.com/conservation/register.html"> Register</a>
+  </div>
+  <div id="header-inner">
+    <%= link_to "Home", home_path %> |
+    <%= link_to "Understand Threats", '#' %> |
+    <%= link_to "Report a Threat", new_report_path %> |
+    <%= link_to "Reports", reports_path %> |
+    <%= link_to "FAQ", '#' %> |
+    <%= link_to "Contact", '#' %> |
+    <% if signed_in? %> 
+    <%= link_to "Profile", current_user %> |
+    <%= link_to "Settings", edit_user_path(current_user) %>
+    <% end %> 
+  </div>
+</div>

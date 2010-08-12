@@ -10,7 +10,8 @@ namespace :db do
     Report.create!(:title => "sample title",
                  :description=>"some description",
 		 :category=>@category,
-		 :location=>@location)
+		 :location=>@location,
+		 :incident_date=>Date.today)
     
    
 
@@ -19,7 +20,8 @@ namespace :db do
       title="title-#{n+1}"
       Report.create!(:title => title,
                     :description=>description,:category=>@category,
-		    :location=>@location)
+		    :location=>@location,
+		    :incident_date=>Date.today)
     end
   end
 

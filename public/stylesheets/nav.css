@@ -1,0 +1,286 @@
+﻿@charset "UTF-8";
+
+#menu-wrapper {
+	width: 900px;
+	height: 45px;
+	margin: auto;
+	background: url('../images/main-menu.png') no-repeat;
+}
+
+
+/*** ESSENTIAL STYLES ***/
+#menu, #menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+#menu {
+	line-height:	1.0;
+	position: relative;
+	z-index: 2;
+}
+#menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+#menu ul li {
+	width:			100%;
+}
+#menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+#menu li {
+	float:			right;
+	position:		relative;
+}
+#menu a {
+	display:		block;
+	position:		relative;
+	cursor: 		pointer;
+}
+#menu li:hover ul,
+#menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul#menu li:hover li ul,
+ul#menu li.sfHover li ul {
+	top:			-999em;
+}
+ul#menu li li:hover ul,
+ul#menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul#menu li li:hover li ul,
+ul#menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul#menu li li li:hover ul,
+ul#menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+
+	/* Top Level Buttons */
+
+#menu a {
+	padding: 13px 15px 11px 15px;
+	text-decoration:none;
+	font-size: 14px;
+}
+
+#menu a:focus, #menu a:hover, #menu a:active {
+	background: url('../images/main-bg-buttons.png') 0 -38px repeat-x;
+}
+
+#menu li {
+	margin-top: 7px;
+	padding-right: 2px;
+	background: url('../images/main-menu-divider.png') left top no-repeat; 
+}
+
+	/* Home Button */
+	
+#menu li.menu-home a {
+	padding:0;
+	margin-right: 7px;
+	display: block;
+	width: 36px;
+	height: 38px;
+	text-indent: -9999px;
+}
+
+#menu li.menu-home a:focus, #menu li.menu-home a:hover, #menu li.menu-home a:active {
+	background: url('../images/main-bg-buttons.png') 0 0 no-repeat;
+}
+
+	/* Second Level Buttons */
+
+#menu li ul {
+	margin-top: 9px;
+	border-top: none;
+	width: 175px;
+	cursor: pointer;
+}
+
+#menu li li {
+	margin-top: 0;
+	padding-right: 0;
+	background-image: none;
+	cursor: pointer;
+}
+
+#menu li li a {
+	text-align: left;
+	font-size: 11px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#menu li li a:focus, #menu li li a:hover, #menu li li a:active {
+	background: #FFFFFF;
+}
+
+#menu li li li {}
+#menu li:hover, #menu li.sfHover {
+	outline:		0;
+}
+
+/*** arrows **/
+#menu a.sf-with-ul {
+	padding-right: 	2.25em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			16px;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+#menu ul .sf-sub-indicator { background-position:  -10px 0; }
+#menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+#menu ul a:focus > .sf-sub-indicator,
+#menu ul a:hover > .sf-sub-indicator,
+#menu ul a:active > .sf-sub-indicator,
+#menu ul li:hover > a > .sf-sub-indicator,
+#menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** adding the class sf-navbar in addition to sf-menu creates an all-horizontal nav-bar menu ***/
+.sf-navbar {
+	background:		#BDD2FF;
+	height:			2.5em;
+	padding-bottom:	2.5em;
+	position:		relative;
+}
+.sf-navbar li {
+	background:		#AABDE6;
+	position:		static;
+}
+.sf-navbar a {
+	border-top:		none;
+}
+.sf-navbar li ul {
+	width:			44em; /*IE6 soils itself without this*/
+}
+.sf-navbar li li {
+	background:		#BDD2FF;
+	position:		relative;
+}
+.sf-navbar li li ul {
+	width:			13em;
+}
+.sf-navbar li li li {
+	width:			100%;
+}
+.sf-navbar ul li {
+	width:			auto;
+	float:			left;
+}
+.sf-navbar a, .sf-navbar a:visited {
+	border:			none;
+}
+.sf-navbar li.current {
+	background:		#BDD2FF;
+}
+.sf-navbar li:hover,
+.sf-navbar li.sfHover,
+.sf-navbar li li.current,
+.sf-navbar a:focus, .sf-navbar a:hover, .sf-navbar a:active {
+	background:		#BDD2FF;
+}
+.sf-navbar ul li:hover,
+.sf-navbar ul li.sfHover,
+ul.sf-navbar ul li:hover li,
+ul.sf-navbar ul li.sfHover li,
+.sf-navbar ul a:focus, .sf-navbar ul a:hover, .sf-navbar ul a:active {
+	background:		#D1DFFF;
+}
+ul.sf-navbar li li li:hover,
+ul.sf-navbar li li li.sfHover,
+.sf-navbar li li.current li.current,
+.sf-navbar ul li li a:focus, .sf-navbar ul li li a:hover, .sf-navbar ul li li a:active {
+	background:		#E6EEFF;
+}
+ul.sf-navbar .current ul,
+ul.sf-navbar ul li:hover ul,
+ul.sf-navbar ul li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+}
+ul.sf-navbar .current ul ul {
+	top: 			-999em;
+}
+
+.sf-navbar li li.current > a {
+	font-weight:	bold;
+}
+
+/*** point all arrows down ***/
+/* point right for anchors in subs */
+.sf-navbar ul .sf-sub-indicator { background-position: -10px -100px; }
+.sf-navbar ul a > .sf-sub-indicator { background-position: 0 -100px; }
+/* apply hovers to modern browsers */
+.sf-navbar ul a:focus > .sf-sub-indicator,
+.sf-navbar ul a:hover > .sf-sub-indicator,
+.sf-navbar ul a:active > .sf-sub-indicator,
+.sf-navbar ul li:hover > a > .sf-sub-indicator,
+.sf-navbar ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+
+/*** remove shadow on first submenu ***/
+/*
+.sf-navbar > li > ul {
+	background: transparent;
+	padding: 0;
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+}
+*/
+

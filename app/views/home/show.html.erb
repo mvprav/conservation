@@ -1,22 +1,29 @@
-<table>
-  <tr>
-  <td>
-	Title
-  </td>
-<td>
-Description
-</td>
-  </tr>
-  <%@reports.each do |report|%>
-<tr>
-<td>
-<li><%=link_to h(report.title), report%></li>
-  </td>
-<td>
-<span>
-<%=report.description%>
-</span>
-</td>
-</tr>
-  <%end%>
-</table>
+<%= render 'sidebar' %>
+
+<div id="main-display-box" class="rounded-10" style="left: 0px; top: 0px;">
+  <%= render 'maininfo' %>
+  <%= render 'mainreport' %>
+</div
+
+
+
+<script type="text/javascript">
+    $(function() {
+      $('#slideshow').cycle({
+                            fx:     'fade',
+                            timeout: 2500,
+                            pager:  '#slideshow-nav',
+                            pagerAnchorBuilder: function(idx, slide) {
+                                // return sel string for existing anchor
+                                return '#slideshow-nav li:eq(' + (idx) + ') a';
+                            },
+                            speed:  'slow'
+                        });
+                    
+                        $('#direct').click(function() {
+                            $('#nav li:eq(2) a').triggerHandler('click');
+                            return false;
+                        });
+                        
+                    });
+  </script>
