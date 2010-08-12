@@ -49,7 +49,7 @@ a.active {
 /* HEADER */
 
 #header {
-	background: #ffffff url('style3/header-glow.png') center 0 no-repeat;
+	background: #ffffff url('../images/header-glow.png') center 0 no-repeat;
 	background: #f2f2f2;
 	width: 240px;
 	margin: 0 10px 0 0;
@@ -292,7 +292,7 @@ a.active {
 }
 */
 #understand-sidebar .bullet li a {
-	background-image: url('style3/submenu-bullet.png');
+	background-image: url('../images/submenu-bullet.png');
 	color:#666;
 }
 

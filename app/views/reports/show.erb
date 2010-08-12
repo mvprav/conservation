@@ -1,26 +1,38 @@
-<table> 
-  <tr> 
-    <td> 
-      <strong>Title:</strong>&nbsp;
-    </td>
-    <td>
-      <%= h @report.title %><br /> 
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Description:</strong>&nbsp;
-    </td>
-    <td>
-      <%=h @report.description %>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Category</strong>&nbsp;</td>
-    <td><%=h @report.category.name%></td>
-  </tr>
-  <tr>
-    <td><strong>Location</strong>&nbsp;</td>
-    <td><%=h @report.location.name%></td>
-  </tr>
-</table>
+<div id="report-detail" class="rounded-10" style="left: 0px; top: 0px;">           
+  <div id="detail-box"><h2><cufon style="width: 84px; height: 25px;" alt="Report " class="cufon cufon-canvas"><canvas style="width: 105px; height: 27px; top: 0px; left: -1px;" height="27" width="105"></canvas><cufontext>Report </cufontext></cufon><cufon style="width: 80px; height: 25px;" alt="Details" class="cufon cufon-canvas"><canvas style="width: 96px; height: 27px; top: 0px; left: -1px;" height="27" width="96"></canvas><cufontext>Details</cufontext></cufon></h2>
+  <div id="report-display" class="rounded-10">
+      <ol>
+      <li>
+	<label class="name">Report Title</label>
+	<p class="rounded-5"><%=@report.title%></p>
+      </li>
+      <li>
+	<label class="name">Location</label>
+	<p class="rounded-5"><%=@report.location.name%></p>
+      </li>
+      <li>
+	<label class="name">Date</label>
+	<p class="rounded-5"><%=@report.incident_date%></p>
+      </li>
+      <li>
+	<label class="name">Threat Category</label>
+	<p class="rounded-5"><%=@report.category.name%></p>
+      </li>
+    </ol>	
+  </div><!-- #contact (end) -->
+</div><!-- #contact-box (end) -->
+<div id="pic-box">
+  <h2><cufon style="width: 87px; height: 25px;" alt="Picture " class="cufon cufon-canvas"><canvas style="width: 108px; height: 27px; top: 0px; left: -1px;" height="27" width="108"></canvas><cufontext>Picture </cufontext></cufon><cufon style="width: 68px; height: 25px;" alt="Space" class="cufon cufon-canvas"><canvas style="width: 82px; height: 27px; top: 0px; left: -1px;" height="27" width="82"></canvas><cufontext>Space</cufontext></cufon></h2>
+  <div id="pic" class="rounded-10">
+    <img src="../images/sample.JPG" alt="Sample Image">
+    </div>
+  </div> <!-- #submit-map-display (end) -->   
+  
+  <div id="report-description-box" class="rounded-10">
+    <label class="name">Report Description</label>
+    <p class="rounded-10"><%=@report.description%></p>
+   
+  </div>
+  
+</div><!-- #submit report (end) -->
+

@@ -1,24 +1,25 @@
-<%= will_paginate%>
-<table>
-  <tr>
-    <td>
-      Title
-    </td>
-    <td>
-      Description
-    </td>
-  </tr>
-  <%@reports.each do |report|%>
-  <tr>
-    <td>
-      <li><%=link_to h(report.title), report%></li>
-    </td>
-    <td>
-      <span>
-	<%=report.description%>
-      </span>
-    </td>
-  </tr>
-  <%end%>
-</table>
-<%= will_paginate%>
+<div id="report-page-display" class="rounded-10" style="left: 0px; top: 0px;">
+  <%= will_paginate%>
+  <h2><cufon style="width: 76px; height: 25px;" alt="Latest " class="cufon cufon-canvas"><canvas style="width: 97px; height: 27px; top: 0px; left: -1px;" height="27" width="97"></canvas><cufontext>Latest </cufontext></cufon><cufon style="width: 89px; height: 25px;" alt="Reports" class="cufon cufon-canvas"><canvas style="width: 105px; height: 27px; top: 0px; left: -1px;" height="27" width="105"></canvas><cufontext>Reports</cufontext></cufon></h2>
+  <table class="tbl" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+	<td class="td-6 thead-leftc">Title</td>
+	<td class="td-7">Location</td>   
+	<td class="td-8">Date</td>
+	<td class="td-9 thead-rightc">Threats Category</td>                                                                  
+      </tr>                
+    </thead>
+    <tbody>
+      <%@reports.each do |report|%>
+      <tr class="odd">
+	<td class="td-6"><%=link_to report.title,report_path(report)%></td>
+	<td class="td-7"><%=report.location.name%></td>
+	<td class="td-8"><%=report.incident_date%></td>
+	<td class="td-9"><%=report.category.name%></td>                                                
+      </tr>
+      <%end%>
+    </tbody>
+  </table>
+  <%= will_paginate%>
+</div>

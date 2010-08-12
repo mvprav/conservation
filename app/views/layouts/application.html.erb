@@ -10,12 +10,11 @@
       <div id="main">
 	<div id="main-inner">
 	  <% flash.each do |key, value| %>
-	  <%= value %>
+	  <div class="flash <%= key %>"><%= value %></div> 
 	  <% end %>
 	  <%= yield %>
 	</div>
       </div>
     </div>
   </body>
-  
 </html> 

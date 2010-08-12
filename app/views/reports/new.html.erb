@@ -1,30 +1,46 @@
-<h1>Report</h1>
-<% form_for(@report)do |f|%>
-<% if @categories!=nil %>
-<div class="field">
-  <%=f.label :categories%><br>
-  <%=f.select(:category_id,@categories.map{|c|[c.name,c.id]})%>
+<div id="submit-report" class="rounded-10" style="left: 0px; top: 0px;">           
+  <div id="contact-box"><h2><cufon style="width: 88px; height: 25px;" alt="Submit " class="cufon cufon-canvas"><canvas style="width: 109px; height: 27px; top: 0px; left: -1px;" height="27" width="109"></canvas><cufontext>Submit </cufontext></cufon><cufon style="width: 20px; height: 25px;" alt="a " class="cufon cufon-canvas"><canvas style="width: 41px; height: 27px; top: 0px; left: -1px;" height="27" width="41"></canvas><cufontext>a </cufontext></cufon><cufon style="width: 72px; height: 25px;" alt="report" class="cufon cufon-canvas"><canvas style="width: 90px; height: 27px; top: 0px; left: -1px;" height="27" width="90"></canvas><cufontext>report</cufontext></cufon></h2>
+  <div id="contact" class="rounded-10">
+    <% form_for(@report)do |f|%>
+    <fieldset>
+      <ol>
+	<li>
+	  <%=f.label(:categories,"Select Threat", :class=>"name")%>
+	  <%=f.select(:category_id,@categories.map{|c|[c.name,c.id]},{:include_blank=>false},:class=>'width required')%>
+	</li>
+	<li>
+	  <%=f.label :location, 'Select Location', :class=>'name'%>
+	  <%=f.select(:location_id,@locations.map{|l|[l.name,l.id]},{:include_blank=>false},:class=>'width required')%>
+	</li>
+	<li>
+	  <%=f.label :title,'Report Title',:class=>'name'%>
+	  <%=f.text_field :title,:class=>'width required' %>
+	</li>
+	<li>
+	   <%=f.label :description,'Description',:class=>'name'%>
+	   <%=f.text_area :description,:class=>'width required'%>
+	</li>
+	<li>
+	   <%=f.label :incident_date,'Date of incident',:class=>'name'%>
+	   <%=f.text_field :incident_date,:class=>'width required'%>
+	</li>
+	<li>
+	  <label for="email" class="name">Upload Photo</label>
+	  <input name="email" id="email" class="width required" type="text"/>
+	  <input id="upload" value="Upload" type="submit" />
+	</li>
+	<li>
+	  <label for="submit" class="name">&nbsp;</label>
+	  <%=f.submit "Submit"%>
+	</li>
+      </ol>
+    </fieldset>
+    <%end%>
+  </div>
+  </div>
+  <div id="submit-map-display">
+    <h2><cufon style="width: 82px; height: 25px;" alt="Where " class="cufon cufon-canvas"><canvas style="width: 103px; height: 27px; top: 0px; left: -1px;" height="27" width="103"></canvas><cufontext>Where </cufontext></cufon><cufon style="width: 43px; height: 25px;" alt="did " class="cufon cufon-canvas"><canvas style="width: 64px; height: 27px; top: 0px; left: -1px;" height="27" width="64"></canvas><cufontext>did </cufontext></cufon><cufon style="width: 49px; height: 25px;" alt="you " class="cufon cufon-canvas"><canvas style="width: 70px; height: 27px; top: 0px; left: -1px;" height="27" width="70"></canvas><cufontext>you </cufontext></cufon><cufon style="width: 57px; height: 25px;" alt="spot " class="cufon cufon-canvas"><canvas style="width: 78px; height: 27px; top: 0px; left: -1px;" height="27" width="78"></canvas><cufontext>spot </cufontext></cufon><cufon style="width: 29px; height: 25px;" alt="it?" class="cufon cufon-canvas"><canvas style="width: 44px; height: 27px; top: 0px; left: -1px;" height="27" width="44"></canvas><cufontext>it?</cufontext></cufon></h2>
+    <div id="map" class="rounded-10">
+    </div>
+  </div> <!-- #submit-map-display (end) -->    
 </div>
-<%end%>
-<% if @locations!=nil %>
-<div class="field">
-  <%=f.label :location%><br>
-  <%=f.select(:location_id,@locations.map{|l|[l.name,l.id]})%>
-</div>
-<%end%>
-<div class="field">
-  <%=f.label :title%><br>
-  <%=f.text_field :title %>
-</div>
-<div class="field">
-  <%=f.label :description%><br>
-  <%=f.text_area :description%>
-</div>
-<div class="field">
-  <%=f.label :incident_date%>
-  <%=f.text_field :incident_date%>
-</div>
-<div class="action">
-  <%=f.submit "Create"%>
-</div>
-<% end %>
