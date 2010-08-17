@@ -1,7 +1,7 @@
 <div id="submit-report" class="rounded-10" style="left: 0px; top: 0px;">           
   <div id="contact-box"><h2><cufon style="width: 88px; height: 25px;" alt="Submit " class="cufon cufon-canvas"><canvas style="width: 109px; height: 27px; top: 0px; left: -1px;" height="27" width="109"></canvas><cufontext>Submit </cufontext></cufon><cufon style="width: 20px; height: 25px;" alt="a " class="cufon cufon-canvas"><canvas style="width: 41px; height: 27px; top: 0px; left: -1px;" height="27" width="41"></canvas><cufontext>a </cufontext></cufon><cufon style="width: 72px; height: 25px;" alt="report" class="cufon cufon-canvas"><canvas style="width: 90px; height: 27px; top: 0px; left: -1px;" height="27" width="90"></canvas><cufontext>report</cufontext></cufon></h2>
   <div id="contact" class="rounded-10">
-    <% form_for(@report)do |f|%>
+    <% form_for(@report, :html=>{:multipart=>true})do |f|%>
     <fieldset>
       <ol>
 	<li>
@@ -26,8 +26,8 @@
 	</li>
 	<li>
 	  <label for="email" class="name">Upload Photo</label>
-	  <input name="email" id="email" class="width required" type="text"/>
-	  <input id="upload" value="Upload" type="submit" />
+	  <input id="photos" type="file" name="file_1" />
+	  <div id="files_list"></div>
 	</li>
 	<li>
 	  <label for="submit" class="name">&nbsp;</label>
@@ -44,3 +44,16 @@
     </div>
   </div> <!-- #submit-map-display (end) -->    
 </div>
+
+
+<script>
+	<!-- Create an instance of the multiSelector class, pass it the output target and the max number of files -->
+	var multi_selector = new MultiSelector( document.getElementById( 'files_list' ), 3 );
+	<!-- Pass in the file element -->
+	multi_selector.addElement( document.getElementById( 'photos' ) );
+</script>
+<script>
+  $(document).ready(function() {
+   $("#report_incident_date").datepicker();
+  });
+</script>

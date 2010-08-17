@@ -1,3 +1,4 @@
+require "pp"
 class ReportsController < ApplicationController
   include SessionsHelper
   before_filter :authenticate , :only=>[:new, :create]
@@ -23,7 +24,15 @@ class ReportsController < ApplicationController
     @report.category=Category.find(params[:report][:category_id])
     @report.location=Location.find(params[:report][:location_id])
     @title="Report Incident"
+    
     if @report.save
+      if params[:photos] != nil 
+        params[:photos].each do |key,photo|
+          pp 'in the loop'
+          @image=IncidentImage.new(:image=>photo,:report=>@report)
+          @image.save
+        end
+      end
       redirect_to @report
       flash[:success]="Incident Reported"
     else

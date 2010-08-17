@@ -6,9 +6,9 @@
     <% if signed_in? %>
     <%= link_to "Sign out", signout_path, :method => :delete%>
     <% else %>
-    <%= link_to "Sign in", signin_path %>
-    <% end%> | 
-    <a href="http://www.foxdart.com/conservation/register.html"> Register</a>
+    <%= link_to "Sign in", signin_path %> |
+    <%= link_to "Register", signup_path%>
+    <% end%>
   </div>
   <div id="header-inner">
     <%= link_to "Home", home_path %> |

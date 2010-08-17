@@ -52,6 +52,7 @@ Rails::Initializer.run do |config|
   config.gem 'webrat', :lib => false
   config.gem 'ZenTest', :lib => false
   config.gem 'database_cleaner', :lib => false		
+  config.gem 'paperclip', :version=>"2.3.3"
 					 
 end
 require "will_paginate"

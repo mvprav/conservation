@@ -1,5 +1,5 @@
 <div id="report-detail" class="rounded-10" style="left: 0px; top: 0px;">           
-  <div id="detail-box"><h2><cufon style="width: 84px; height: 25px;" alt="Report " class="cufon cufon-canvas"><canvas style="width: 105px; height: 27px; top: 0px; left: -1px;" height="27" width="105"></canvas><cufontext>Report </cufontext></cufon><cufon style="width: 80px; height: 25px;" alt="Details" class="cufon cufon-canvas"><canvas style="width: 96px; height: 27px; top: 0px; left: -1px;" height="27" width="96"></canvas><cufontext>Details</cufontext></cufon></h2>
+  <div id="detail-box"><h2></h2>
   <div id="report-display" class="rounded-10">
       <ol>
       <li>
@@ -19,14 +19,20 @@
 	<p class="rounded-5"><%=@report.category.name%></p>
       </li>
     </ol>	
-  </div><!-- #contact (end) -->
-</div><!-- #contact-box (end) -->
+  </div>
+</div>
 <div id="pic-box">
-  <h2><cufon style="width: 87px; height: 25px;" alt="Picture " class="cufon cufon-canvas"><canvas style="width: 108px; height: 27px; top: 0px; left: -1px;" height="27" width="108"></canvas><cufontext>Picture </cufontext></cufon><cufon style="width: 68px; height: 25px;" alt="Space" class="cufon cufon-canvas"><canvas style="width: 82px; height: 27px; top: 0px; left: -1px;" height="27" width="82"></canvas><cufontext>Space</cufontext></cufon></h2>
-  <div id="pic" class="rounded-10">
-    <img src="../images/sample.JPG" alt="Sample Image">
-    </div>
-  </div> <!-- #submit-map-display (end) -->   
+  <h2></h2>
+ 
+    <div id="galleria">
+      <%@report.incident_images.each do |image|%>
+      <div>
+	<%= image_tag image.image.url %>
+      </div>
+      <%end%>
+ 
+     </div>
+</div> <!-- #submit-map-display (end) -->   
   
   <div id="report-description-box" class="rounded-10">
     <label class="name">Report Description</label>
@@ -36,3 +42,34 @@
   
 </div><!-- #submit report (end) -->
 
+ 
+  <script>
+    
+    // Load theme
+    Galleria.loadTheme('/javascripts/themes/classic/galleria.classic.js');
+    
+    // run galleria and add some options
+    $('#galleria').galleria({
+        image_crop: false, // crop all images to fit
+	height: 300,
+        thumb_crop: true, // crop all thumbnails to fit
+        transition: 'fade', // crossfade photos
+        transition_speed: 700, // slow down the crossfade
+        data_config: function(img) {
+            // will extract and return image captions from the source:
+            return  {
+                title: $(img).parent().next('strong').html(),
+                description: $(img).parent().next('strong').next().html()
+            };
+        },
+        extend: function() {
+            this.bind(Galleria.IMAGE, function(e) {
+                // bind a click event to the active image
+                $(e.imageTarget).css('cursor','pointer').click(this.proxy(function() {
+                    // open the image in a lightbox
+                    this.openLightbox();
+                }));
+            });
+        }
+    });
+    </script>

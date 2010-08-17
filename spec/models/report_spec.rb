@@ -37,6 +37,10 @@ describe Report do
       @report.location=@location
       @report.should be_valid
       @report.location.should == @location
+    end
+
+    it "should respond to incident_images" do
+      @report.should respond_to :incident_images
     end 
   end
   describe "validation" do

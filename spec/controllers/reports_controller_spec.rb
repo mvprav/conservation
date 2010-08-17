@@ -94,6 +94,15 @@ describe ReportsController do
         post :create, :report=>@attr
         flash[:success].should =~/Incident Reported/i
       end
+
+      it "should save photos uploaded along with report" do
+        post :create, :report=>@attr,:photos=>{
+          "photo_0" => File.new(RAILS_ROOT + '/spec/fixtures/images/button.png'),
+          "photo_1"=>File.new(RAILS_ROOT + '/spec/fixtures/images/button.png')
+        }
+        @report.incident_images.length.should == 2
+        @report.incident_images.should
+      end 
     end
   end
 

@@ -6,5 +6,6 @@ class Report < ActiveRecord::Base
   validates_presence_of :incident_date
   belongs_to :category
   belongs_to :location
+  has_many :incident_images
 end
 
