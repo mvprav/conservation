@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100816125457) do
+ActiveRecord::Schema.define(:version => 20100824142252) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20100816125457) do
     t.integer  "report_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.binary   "images_file"
   end
 
   create_table "locations", :force => true do |t|
@@ -41,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20100816125457) do
     t.integer  "category_id"
     t.integer  "location_id"
     t.date     "incident_date"
+    t.float    "lat"
+    t.float    "lng"
   end
 
   create_table "users", :force => true do |t|

@@ -1,29 +1,6 @@
 <%= render 'sidebar' %>
 
-<div id="main-display-box" class="rounded-10" style="left: 0px; top: 0px;">
+<div id="main-display-box" class="rounded-10">
   <%= render 'maininfo' %>
   <%= render 'mainreport' %>
 </div
-
-
-
-<script type="text/javascript">
-    $(function() {
-      $('#slideshow').cycle({
-                            fx:     'fade',
-                            timeout: 2500,
-                            pager:  '#slideshow-nav',
-                            pagerAnchorBuilder: function(idx, slide) {
-                                // return sel string for existing anchor
-                                return '#slideshow-nav li:eq(' + (idx) + ') a';
-                            },
-                            speed:  'slow'
-                        });
-                    
-                        $('#direct').click(function() {
-                            $('#nav li:eq(2) a').triggerHandler('click');
-                            return false;
-                        });
-                        
-                    });
-  </script>

@@ -9,6 +9,8 @@ ActionController::Routing::Routes.draw do |map|
   map.home '/home' , :controller=>'home', :action=>'show'
   map.home '/', :controller=>'home', :action=>'show'
   map.resources :reports
+  map.reports_json '/reports_json', :controller=>'reports',:action=>'reports_json'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

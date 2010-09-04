@@ -1,25 +1,86 @@
-<div id="report-page-display" class="rounded-10" style="left: 0px; top: 0px;">
-  <%= will_paginate%>
-  <h2><cufon style="width: 76px; height: 25px;" alt="Latest " class="cufon cufon-canvas"><canvas style="width: 97px; height: 27px; top: 0px; left: -1px;" height="27" width="97"></canvas><cufontext>Latest </cufontext></cufon><cufon style="width: 89px; height: 25px;" alt="Reports" class="cufon cufon-canvas"><canvas style="width: 105px; height: 27px; top: 0px; left: -1px;" height="27" width="105"></canvas><cufontext>Reports</cufontext></cufon></h2>
-  <table class="tbl" cellpadding="0" cellspacing="0">
-    <thead>
-      <tr>
-	<td class="td-6 thead-leftc">Title</td>
-	<td class="td-7">Location</td>   
-	<td class="td-8">Date</td>
-	<td class="td-9 thead-rightc">Threats Category</td>                                                                  
-      </tr>                
-    </thead>
-    <tbody>
-      <%@reports.each do |report|%>
-      <tr class="odd">
-	<td class="td-6"><%=link_to report.title,report_path(report)%></td>
-	<td class="td-7"><%=report.location.name%></td>
-	<td class="td-8"><%=report.incident_date%></td>
-	<td class="td-9"><%=report.category.name%></td>                                                
-      </tr>
+<script type="text/javascript">
+    document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+</script>
+<% form_for :filtercondition, :action=>'index', :html => { :method => :get } do |f|%>
+  <%= f.label :location %>
+  <%= f.select(:location_id,@locations.map{|location|[location.name,location.id]},{:selected=>'2'})%> &nbsp;
+
+  <%=f.label :category%>
+  <%= f.select (:category_id,@categories.map{|category|[category.name,category.id]}) %> &nbsp;
+
+  <%= f.label :date_from%>
+  <%=f.text_field :date_from%>&nbsp;
+
+  <%= f.label :date_from%>
+  <%=f.text_field :date_to%>&nbsp;
+
+  <%= f.submit "filter" %>
+<% end %>
+    
+ 
+ 
+<div class="tabber">
+    
+  <div class="tabbertab" title="reports">
+    <div id="report-page-display" class="rounded-10" style="width:100%">
+      <%= will_paginate%>
+      <h2><cufon style="width: 76px; height: 25px;" alt="Latest " class="cufon cufon-canvas"><canvas style="width: 97px; height: 27px; top: 0px; left: -1px;" height="27" width="97"></canvas><cufontext>Latest </cufontext></cufon><cufon style="width: 89px; height: 25px;" alt="Reports" class="cufon cufon-canvas"><canvas style="width: 105px; height: 27px; top: 0px; left: -1px;" height="27" width="105"></canvas><cufontext>Reports</cufontext></cufon></h2>
+      <table class="tbl" cellpadding="0" cellspacing="0">
+	<thead>
+	  <tr>
+	    <td class="td-6 thead-leftc">Title</td>
+	    <td class="td-7">Location</td>   
+	    <td class="td-8">Date</td>
+	    <td class="td-9 thead-rightc">Threats Category</td>                                                                  
+	  </tr>                
+	</thead>
+	<tbody>
+	  <%@reports.each do |report|%>
+	  <tr class="odd">
+	    <td class="td-6"><%=link_to report.title,report_path(report)%></td>
+	    <td class="td-7"><%=report.location.name%></td>
+	    <td class="td-8"><%=report.incident_date%></td>
+	    <td class="td-9"><%=report.category.name%></td>                                                
+	  </tr>
       <%end%>
-    </tbody>
-  </table>
-  <%= will_paginate%>
+	</tbody>
+      </table>
+      <%= will_paginate%>
+    </div>
+  </div>
+  
+  <div class="tabbertab" title="Maps"> 
+    <div id="map" class="rounded-10" style="width:100%">
+    </div>
+  </div>
+
 </div>
+
+<script type="text/javascript">
+    var initialized=false
+    var tabberOptions = {
+	'manualStartup':true,
+	
+	'onLoad': function(argsObj) {
+	    
+	    if (argsObj.tabber.id == 'tab2') {
+		alert('Finished loading tab2!');
+	    }
+	},
+
+	'onClick': function(argsObj) {
+	  
+	    $("#map").multipleMarker()
+	    initialized=true
+	  
+	 
+	},
+	
+	'addLinkId': true
+    };
+
+
+tabberAutomatic(tabberOptions);
+$("#filtercondition_date_from").datepicker();
+$("#filtercondition_date_to").datepicker();
+</script>
