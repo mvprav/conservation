@@ -13,7 +13,7 @@ class ReportsController < ApplicationController
     @categories=Category.find(:all)
     @title="Reports"
     @filter=FilterCondition.new(params[:filtercondition]||={})
-    @reports= Report.paginate(:page=>params[:page],:per_page=>10,:conditions=>@filter.condition)
+    @reports= Report.paginate(:page=>params[:page],:per_page=>10,:conditions=>@filter.condition,:order=>'created_at DESC')
   end
 
   def new

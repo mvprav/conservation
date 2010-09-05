@@ -178,11 +178,10 @@ h6 {font-size: 11px}
 
 #header-outer h1 {
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	left: 0px;
 	margin-left: 10px;
-	
-}
+		 }
 
 #header-outer a#logo {
 	text-indent: -99999px;
@@ -504,7 +503,7 @@ a.active:hover {
 	overflow: visible;
 	font-size: 11px;
 	display: inline;
-	padding:0 10px 0 10px;	
+	padding:10px 10px 0 10px;
 	height:310px;
 }
 

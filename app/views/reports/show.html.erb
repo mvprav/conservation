@@ -1,29 +1,29 @@
-<div id="report-detail" class="rounded-10" style="left: 0px; top: 0px;">           
-  <div id="detail-box"><h2></h2>
-  <div id="report-display" class="rounded-10">
-      <ol>
-      <li>
-	<label class="name">Report Title</label>
-	<p class="rounded-5"><%=@report.title%></p>
-      </li>
-      <li>
-	<label class="name">Location</label>
-	<p class="rounded-5"><%=@report.location.name%></p>
-      </li>
-      <li>
-	<label class="name">Date</label>
-	<p class="rounded-5"><%=@report.incident_date%></p>
-      </li>
-      <li>
-	<label class="name">Threat Category</label>
-	<p class="rounded-5"><%=@report.category.name%></p>
-      </li>
-    </ol>	
+<div id="report-detail" class="rounded-10">           
+  <div id="detail-box">
+        <div id="report-display" class="rounded-10">
+	  <ol>
+	    <li>
+	      <label class="name">Report Title</label>
+	      <p class="rounded-5"><%=@report.title%></p>
+	    </li>
+	    <li>
+	      <label class="name">Location</label>
+	      <p class="rounded-5"><%=@report.location.name%></p>
+	    </li>
+	    <li>
+	      <label class="name">Date</label>
+	      <p class="rounded-5"><%=@report.incident_date%></p>
+	    </li>
+	    <li>
+	      <label class="name">Threat Category</label>
+	      <p class="rounded-5"><%=@report.category.name%></p>
+	    </li>
+	    <%=hidden_field_tag(:lat,@report.lat)%>
+	    <%=hidden_field_tag(:lng,@report.lng)%>
+	  </ol>	
+	</div>
   </div>
-</div>
-<div id="pic-box">
-  <h2></h2>
- 
+  <div id="pic-box">
     <div id="galleria">
       <%@report.incident_images.each do |image|%>
       <div>
@@ -31,19 +31,22 @@
       </div>
       <%end%>
  
-     </div>
-</div> <!-- #submit-map-display (end) -->   
-  
+    </div>
+  </div>   
+  <div id="map_div">
+    <div id="map"></div>
+  </div>
   <div id="report-description-box" class="rounded-10">
     <label class="name">Report Description</label>
     <p class="rounded-10"><%=@report.description%></p>
-   
+    
   </div>
   
-</div><!-- #submit report (end) -->
+</div>
 
- 
-  <script>
+<script>
+
+  $("#map").mapWithSingleMarker({lat: 'lat',lng:'lng',from_server: true,edit_marker:false})
     
     // Load theme
     Galleria.loadTheme('/javascripts/themes/classic/galleria.classic.js');
@@ -72,4 +75,4 @@
             });
         }
     });
-    </script>
+</script>
