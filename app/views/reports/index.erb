@@ -10,10 +10,10 @@
   <%= f.label :date_from%>
   <%=f.text_field :date_from,:style=>['width:100px'],:value=>params[:filtercondition][:date_from]%>&nbsp;
 
-  <%= f.label :date_from%>
+  <%= f.label :date_to%>
   <%=f.text_field :date_to,:style=>['width:100px'],:value=>params[:filtercondition][:date_to]%>&nbsp;
 
-  <%= f.submit "filter" %>
+  <%= f.submit "Filter Report" %>
 <% end %>
  
 <div class="tabber">
