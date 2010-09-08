@@ -33,7 +33,7 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-  config.time_zone = 'IST'
+  config.time_zone = 'Kolkata'
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
@@ -43,6 +43,6 @@ Rails::Initializer.run do |config|
   config.gem "will_paginate", :lib => false, :version => ">= 2.3.14"
   config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
   config.gem 'paperclip', :version=>"2.3.3"
-					 
+				 
 end
 require "will_paginate"
