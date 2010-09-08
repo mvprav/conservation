@@ -40,7 +40,6 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   config.gem "sqlite3-ruby", :lib => "sqlite3", :version=>">=1.3.1"
   config.gem "factory_girl",:lib=>false,:version=>">=1.3.2"
-  config.gem "gherkin", :lib=>false, :version=>">=2.1.4"
 
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "rspec", :lib => false, :version => ">= 1.3.0"
