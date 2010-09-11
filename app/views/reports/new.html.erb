@@ -1,6 +1,5 @@
-<div id="submit-report" class="rounded-10" style="left: 0px; top: 0px;">           
-  <div id="contact-box"><h2>
-<cufon style="width: 88px; height: 25px;" alt="Submit " class="cufon cufon-canvas"><canvas style="width: 109px; height: 27px; top: 0px; left: -1px;" height="27" width="109"></canvas><cufontext>Submit </cufontext></cufon><cufon style="width: 20px; height: 25px;" alt="a " class="cufon cufon-canvas"><canvas style="width: 41px; height: 27px; top: 0px; left: -1px;" height="27" width="41"></canvas><cufontext>a </cufontext></cufon><cufon style="width: 72px; height: 25px;" alt="report" class="cufon cufon-canvas"><canvas style="width: 90px; height: 27px; top: 0px; left: -1px;" height="27" width="90"></canvas><cufontext>report</cufontext></cufon></h2>
+<div id="submit-report" class="rounded-10">           
+  <div id="contact-box">
   <div id="contact" class="rounded-10">
     <% form_for(@report, :html=>{:multipart=>true})do |f|%>
     <fieldset>
@@ -45,15 +44,11 @@
   <div id="submit-map-display">
     <div id="map" class="rounded-10">
      </div>
-  </div> <!-- #submit-map-display (end) -->    
+  </div> 
 </div>
-
-
 
 <script type="text/javascript">
   
-
-
 $(document).ready(function() {
     $("#files_list").multiPhotoUpload();
     $("#report_incident_date").datepicker();
