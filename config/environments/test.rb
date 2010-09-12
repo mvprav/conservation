@@ -28,4 +28,13 @@ config.action_mailer.delivery_method = :test
 # config.active_record.schema_format = :sql
 
   config.gem 'rspec-rails', :version => '>= 1.3.2', :lib => false unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec-rails'))
-config.gem 'factory_girl'
+  config.gem 'factory_girl'
+  config.gem "rspec", :lib => false, :version => ">= 1.3.0"
+  config.gem 'shoulda', :lib => false, :version => "2.11.1"
+  config.gem 'cucumber', :lib => false
+  config.gem 'cucumber-rails', :lib => false
+  config.gem 'webrat', :lib => false
+  config.gem 'ZenTest', :lib => false
+  config.gem 'database_cleaner', :lib => false		
+  config.gem "sqlite3-ruby", :lib => "sqlite3", :version=>">=1.3.1"
+

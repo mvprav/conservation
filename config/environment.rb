@@ -1,7 +1,8 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.8' #unless defined? RAILS_GEM_VERSION
+#ENV["RAILS_ENV"]='production'
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -33,28 +34,17 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-  config.time_zone = 'UTC'
+  config.time_zone = 'Kolkata'
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
-  config.gem "sqlite3-ruby", :lib => "sqlite3", :version=>">=1.3.1"
-  config.gem "factory_girl",:lib=>false,:version=>">=1.3.2"
-  config.gem "gherkin", :lib=>false, :version=>">=2.1.4"
 
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "rspec", :lib => false, :version => ">= 1.3.0"
-  config.gem "will_paginate", :lib => false, :version => ">= 2.3.14"
-  config.gem "faker", :lib => false, :version => ">= 0.3.1"
-  config.gem "rspec-rails", :lib => false, :version => ">= 1.3.2"
+  config.gem "will_paginate", :lib => false#, :version => ">= 2.3.14"
   config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
-  config.gem 'shoulda', :lib => false, :version => "2.11.1"
-  config.gem 'cucumber', :lib => false
-  config.gem 'cucumber-rails', :lib => false
-  config.gem 'webrat', :lib => false
-  config.gem 'ZenTest', :lib => false
-  config.gem 'database_cleaner', :lib => false		
   config.gem 'paperclip', :version=>"2.3.3"
-					 
+  config.gem "faker", :lib => false, :version => ">= 0.3.1"
+				 
 end
 require "will_paginate"
