@@ -18,6 +18,10 @@
 	      <label class="name">Threat Category</label>
 	      <p class="rounded-5"><%=@report.category.name%></p>
 	    </li>
+            <li>
+              <label class="name">Report Description</label>
+              <p class="rounded-5"><%=@report.description%></p>
+            </li>
 	    <%=hidden_field_tag(:lat,@report.lat)%>
 	    <%=hidden_field_tag(:lng,@report.lng)%>
 	  </ol>	
@@ -36,12 +40,7 @@
   <div id="map_div">
     <div id="map"></div>
   </div>
-  <div id="report-description-box" class="rounded-10">
-    <label class="name">Report Description</label>
-    <p class="rounded-10"><%=@report.description%></p>
     
-  </div>
-  
 </div>
 
 <script>
