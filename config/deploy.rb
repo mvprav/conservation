@@ -35,7 +35,6 @@ after "deploy:update_code", :roles => [:web, :db, :app] do
 end
 
 after "deploy:update", "deploy:cleanup" 
-end
 
 # namespace :deploy do
 #   task :start do ; end
