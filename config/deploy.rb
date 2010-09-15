@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + "/capistrano_database_yml"
 
 set :application, "conservation"
 set :user, "conserva"
-set :server, "74.63.4.11"
+set :server, "conservationthreats.org"
 
 set :repository,  "git://github.com/mvprav/conservation.git"
 set :scm, :git
@@ -14,9 +14,9 @@ set :branch, "master"
 set :keep_releases, 5
 set :deploy_to, "/home/#{user}/#{application}" 
 
-role :web, server                           # Your HTTP server, Apache/etc
-role :app, server                           # This may be the same as your `Web` server
-role :db, server , :primary => true # This is where Rails migrations will run
+role :web, '74.63.4.11'                           # Your HTTP server, Apache/etc
+role :app, '74.63.4.11'                           # This may be the same as your `Web` server
+role :db, '74.63.4.11' , :primary => true # This is where Rails migrations will run
 
 namespace :deploy do
     [:start, :stop].each do |t|
