@@ -9,7 +9,7 @@ set :scm, :git
 set :scn_verbose, true
 set :deploy_via, :remote_cache
 set :branch, "master"
-#set :use_sudo, false
+set :use_sudo, false
 
 set :keep_releases, 5
 set :deploy_to, "/home/#{user}/#{application}" 
