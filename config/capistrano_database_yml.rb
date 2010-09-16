@@ -116,23 +116,8 @@ Capistrano::Configuration.instance.load do
       DESC
       task :setup, :except => { :no_release => true } do
 
-        default_template = <<-EOF
-        base: &base
-          adapter: sqlite3
-          timeout: 5000
-        development:
-          database: #{shared_path}/db/development.sqlite3
-          <<: *base
-        test:
-          database: #{shared_path}/db/test.sqlite3
-          <<: *base
-        production:
-          database: #{shared_path}/db/production.sqlite3
-          <<: *base
-        EOF
-
         location = fetch(:template_dir, "config/deploy") + '/database.yml.erb'
-        template = File.file?(location) ? File.read(location) : default_template
+        template = File.read(location)
 
         config = ERB.new(template)
 
@@ -150,7 +135,7 @@ Capistrano::Configuration.instance.load do
 
     end
 
-    after "deploy:setup",           "deploy:db:setup"   unless fetch(:skip_db_setup, false)
+    after "deploy:setup",           "deploy:db:setup"   #unless fetch(:skip_db_setup, false)
     after "deploy:finalize_update", "deploy:db:symlink"
 
   end
