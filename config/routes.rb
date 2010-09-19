@@ -8,9 +8,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :home, :only=>[:new]
   map.home '/home' , :controller=>'home', :action=>'show'
   map.home '/', :controller=>'home', :action=>'show'
+  map.understandthreats 'understandthreats/:page', :controller=>'understandthreats', :action=>'page'
+  map.understandthreats_main '/understandthreats', :controller=>'understandthreats', :action=>'page'
   
-  
-  map.resources :understandthreats
   map.reports_json '/reports_json', :controller=>'reports',:action=>'reports_json'
  
 
