@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 #  map.connect ':home',:controller =>'home',:action=>'show'
-  map.resources :users
+  map.resources :users, :reports
   map.signup '/signup', :controller=>'users', :action=>'new'
   map.resources :sessions, :only=>[:new,:create,:destroy]
   map.signin '/signin', :controller=>'sessions', :action=>'new'
@@ -8,10 +8,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :home, :only=>[:new]
   map.home '/home' , :controller=>'home', :action=>'show'
   map.home '/', :controller=>'home', :action=>'show'
-  map.resources :reports
-
-  map.resources :UnderstandThreats
+  
+  
+  map.resources :understandthreats
   map.reports_json '/reports_json', :controller=>'reports',:action=>'reports_json'
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
 

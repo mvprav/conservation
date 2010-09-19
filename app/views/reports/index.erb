@@ -4,10 +4,10 @@
                {:selected=>params[:filtercondition][:location_id].to_i,:include_blank=>true},:class=>'width required')%> &nbsp;
 
   <%=f.label :category%>
-  <%= f.select (:category_id,@categories.map{|category|[category.name,category.id]},
-                {:selected=>params[:filtercondition][:category_id].to_i,:include_blank=>true},:class=>'width required') %> &nbsp;
+  <%=f.select(:category_id,@categories.map{|category|[category.name,category.id]},
+               {:selected=>params[:filtercondition][:category_id].to_i,:include_blank=>true},:class=>'width required') %> &nbsp;
 
-  <%= f.label :date_from%>
+  <%=f.label :date_from%>
   <%=f.text_field :date_from,:style=>['width:100px'],:value=>params[:filtercondition][:date_from]%>&nbsp;
 
   <%= f.label :date_to%>

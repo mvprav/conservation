@@ -1,6 +1,8 @@
+Factory.sequence(:email){|n| "a#{n}@a.com"}
+
 Factory.define :user do |user|
   user.name "praveen"
-  user.email "a@a.com"
+  user.email {Factory.next(:email)}
   user.password "password"
   user.password_confirmation "password"  
 end
@@ -11,6 +13,7 @@ Factory.define :report do |report|
   report.association :category
   report.association :location
   report.incident_date Date.today
+  report.association :user
 end
 
 

@@ -7,3 +7,22 @@ one:
 two:
   title: MyString
   description: 
+
+
+# == Schema Information
+#
+# Table name: reports
+#
+#  id            :integer         not null, primary key
+#  title         :string(255)
+#  description   :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  category_id   :integer
+#  location_id   :integer
+#  incident_date :date
+#  lat           :float
+#  lng           :float
+#  user_id       :integer
+#
+

@@ -48,23 +48,23 @@ describe ReportsController do
         @attr={
           :title=>"",
           :description=>"",
-          :category_id=>Factory(:category),
-          :location_id=>Factory(:location)
+          :category_id=>1,
+          :location_id=>1
         }
         @categories_returned=[Factory(:category),Factory(:category,:name=>"name 2")]
-        Category.stub!(:find).and_return(@categories_returned)
+        Category.stub!(:find).with(:all).and_return(@categories_returned)
+        Category.stub!(:find).with(1).and_return(Factory(:category))
         @locations_returned=[Factory(:location),Factory(:location,:name=>"location 2")]
-        Location.stub!(:find).and_return(@locations_returned)
+        Location.stub!(:find).with(:all).and_return(@locations_returned)
+        Location.stub!(:find).with(1).and_return(Factory(:location))
       end
 
       it "should have right title" do
-        pending("need to fix these test.")
         post :create, :report=>@attr
         response.should have_tag("title",/Report Incident/)
       end 
 
       it "should render 'new' page" do
-        pending("need to fix this web")
         post :create, :report=>@attr
         response.should render_template('new')
       end 
@@ -80,8 +80,9 @@ describe ReportsController do
         @category=Factory(:category)
         @location=Factory(:location)
         @report=Factory(:report,:category=>@category,:location=>@location)
-        Report.stub!(:new).and_return(@report)
         @report.should_receive(:save).and_return(true)
+
+        Report.stub!(:new).and_return(@report)
         Category.should_receive(:find).with(1).and_return(@category)
         Location.should_receive(:find).with(1).and_return(@location)
       end
@@ -103,6 +104,11 @@ describe ReportsController do
         }
         @report.incident_images.length.should == 2
         @report.incident_images.should
+      end 
+
+      it "should assign the current user as owner" do
+        post :create, :report=>@attr
+        @report.user.should==@user
       end 
     end
   end
@@ -168,13 +174,13 @@ describe ReportsController do
     end 
 
     it "should load reports" do  
-      pending("need to fix this")
       get :index
       response.should have_tag("div.pagination")
       response.should have_tag("span", "&laquo; Previous")
       response.should have_tag("span", "1")
-      response.should have_tag("a[href=?]", "/reports?page=2", "2")
-      response.should have_tag("a[href=?]", "/reports?page=2", "Next &raquo;")
+      response.should have_tag("a[href=?]", "/reports?&amp;page=2", "2")
+      response.should have_tag("a[href=?]", "/reports?&amp;page=2", "Next &raquo;")
+      
     end
   end
 
@@ -208,18 +214,59 @@ describe ReportsController do
     end
     
     it "should filter based on location" do
-      Report.should_receive(:paginate).with(:page=>nil, :per_page=>10,:conditions=>{:location_id=>"1"}).
+      Report.should_receive(:paginate).with(:order=>"created_at DESC",:page=>nil, :per_page=>10,:conditions=>{:location_id=>"1"}).
         and_return(@reports_returned.paginate)
       get :index, :filtercondition=>{:location_id=>'1'}
       response.should be_success
     end 
 
     it "should filter based on category" do
-      Report.should_receive(:paginate).with(:page=>nil, :per_page=>10,:conditions=>{:category_id=>"1"}).
+      Report.should_receive(:paginate).with(:order=>"created_at DESC",:page=>nil, :per_page=>10,:conditions=>{:category_id=>"1"}).
         and_return(@reports_returned.paginate)
       get :index, :filtercondition=>{:category_id=>'1'}
       response.should be_success
     end 
+  end
+
+  describe "Deleting of reports " do
+    describe "For unauthenticated user" do
+      it "should redirect to signing page" do
+        delete :destroy, :id=>'1'
+        response.should redirect_to signin_path
+      end 
+    end
+    
+    describe "For Authenticated user" do
+      describe "For user not the owner of the report" do
+        before(:each) do
+          @wrong_user=Factory(:user,:email=>"wrong_user@abc.com")
+          test_sign_in @wrong_user
+        end
+        
+        it "should render report show page with error message" do
+          @report=Factory(:report)
+          Report.stub!(:find,@report.id).and_return(@report)
+          delete :destroy , :id=>@report
+          response.should redirect_to report_path
+          flash[:notice].should=="Access denied"
+        end 
+      end
+      
+      describe "For the owner of the report " do
+        before(:each) do
+          @user=Factory(:user)
+          test_sign_in @user
+        end
+        
+        it "should delete the report" do
+          @report=Factory(:report,:user=>@user)
+          Report.stub!(:find,@report.id).and_return(@report)
+          @report.should_receive(:delete)
+          delete :destroy , :id=>@report
+          response.should redirect_to home_path
+        end 
+      end
+    end
   end
 end
 

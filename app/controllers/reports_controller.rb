@@ -2,10 +2,20 @@ require 'filter_condition'
 require 'pp'
 class ReportsController < ApplicationController
   include SessionsHelper
-  before_filter :authenticate , :only=>[:new, :create]
+  before_filter :authenticate , :only=>[:new, :create, :destroy]
+  before_filter :correct_user , :only=>[:destroy]
   
   def authenticate
     deny_access unless signed_in?
+  end
+
+  def correct_user
+    @report=Report.find(params[:id])
+    unless @report.user==current_user
+      flash[:notice]="Access denied"
+      redirect_to report_path @report 
+    end
+
   end
 
   def index
@@ -13,7 +23,6 @@ class ReportsController < ApplicationController
     @categories=Category.find(:all)
     @title="Reports"
     @filter=FilterCondition.new(params[:filtercondition]||={})
-    pp @filter.condition.to_s+"*****************"
     if(@filter.condition.length==0) 
       @reports= Report.paginate(:page=>params[:page],:per_page=>10,:order=>'created_at DESC')
     else
@@ -33,7 +42,7 @@ class ReportsController < ApplicationController
     @report.category=Category.find(params[:report][:category_id])
     @report.location=Location.find(params[:report][:location_id])
     @title="Report Incident"
-    
+    @report.user=current_user
     if @report.save
       if params[:photos] != nil 
         params[:photos].each do |key,photo|
@@ -54,6 +63,12 @@ class ReportsController < ApplicationController
     @report=Report.find(params[:id])
     @title=@report.title
   end
+
+  def destroy
+    @report.delete()
+    redirect_to home_path
+  end
+
   def reports_json
     @filter=FilterCondition.new(params[:filtercondition]||={})
     render :json =>Report.find(:all,:conditions=>@filter.condition).to_json(:only=>[:id,:lat,:lng])

@@ -5,7 +5,12 @@ describe Report do
     @valid_attributes = {
       :title => "value for title",
       :description => "description",
-      :incident_date=>Date.today
+      :incident_date=>Date.today,
+      :category=>Factory(:category),
+      :location=>Factory(:location),
+      :user=>Factory(:user),
+      :lat=>'1.23',
+      :lng=>'2.34'
     }
   end
  
@@ -13,8 +18,6 @@ describe Report do
   describe "associations" do
     before(:each) do
       @report=Report.new(@valid_attributes)
-      @report.category=Factory(:category)
-      @report.location=Factory(:location)
     end
 
     it "should belong to a category" do
@@ -32,6 +35,12 @@ describe Report do
       @report.should respond_to(:location)
     end 
 
+    it "should associae with right user" do
+      @user=Factory(:user,:email=>"1@1.com")
+      @report.user=@user
+      @report.user.should==@user
+    end 
+
     it "should associate with right location" do
       @location=Factory(:location)
       @report.location=@location
@@ -41,6 +50,10 @@ describe Report do
 
     it "should respond to incident_images" do
       @report.should respond_to :incident_images
+    end 
+
+    it "should belog to a user" do
+      @report.should respond_to :user
     end 
   end
   describe "validation" do
@@ -56,22 +69,46 @@ describe Report do
     end
 
     it "should not create report with out category" do
-      report_without_category=Report.new(@valid_attributes)
-      report_without_category.location=Factory(:location)
+      report_without_category=Report.new(@valid_attributes.merge(:category=>nil))
       report_without_category.should_not be_valid
     end 
 
     it "should not create report with out location" do
-      report_without_location=Report.new(@valid_attributes)
-      report_without_location.category=Factory(:category)
+      report_without_location=Report.new(@valid_attributes.merge(:location=>nil))
       report_without_location.should_not be_valid
     end 
 
     it "should not create report without incident date" do
       report_without_date =Report.new(@valid_attributes.merge(:incident_date=>""))
-      report_without_date.category=Factory(:category)
-      report_without_date.location=Factory(:location)
       report_without_date.should_not be_valid
+    end 
+
+    it "should not create report without owner" do
+      report_without_owner = Report.new(@valid_attributes.merge(:user=>nil))
+      report_without_owner.should_not be_valid
+    end 
+    it "should not create report without google map locations" do
+      report_without_googlemap_locations = Report.new(@valid_attributes.merge(:lat=>'',:lng=>''))
+      report_without_googlemap_locations.should_not be_valid
     end 
   end
 end
+
+
+# == Schema Information
+#
+# Table name: reports
+#
+#  id            :integer         not null, primary key
+#  title         :string(255)
+#  description   :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  category_id   :integer
+#  location_id   :integer
+#  incident_date :date
+#  lat           :float
+#  lng           :float
+#  user_id       :integer
+#
+

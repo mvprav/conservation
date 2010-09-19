@@ -1,6 +1,7 @@
 <div id="submit-report" class="rounded-10">           
   <div id="contact-box">
   <div id="contact" class="rounded-10">
+    <%=error_messages_for :report%>
     <% form_for(@report, :html=>{:multipart=>true})do |f|%>
     <fieldset>
       <ol>

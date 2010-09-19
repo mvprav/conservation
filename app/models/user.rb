@@ -1,16 +1,3 @@
-# == Schema Information
-# Schema version: 20100710114059
-#
-# Table name: users
-#
-#  id                 :integer         not null, primary key
-#  name               :string(255)
-#  email              :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
-#  encrypted_password :string(255)
-#
-
 require 'digest'
 
 class User < ActiveRecord::Base
@@ -54,4 +41,18 @@ class User < ActiveRecord::Base
   end
 
 end
+
+
+# == Schema Information
+#
+# Table name: users
+#
+#  id                 :integer         not null, primary key
+#  name               :string(255)
+#  email              :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  encrypted_password :string(255)
+#  remember_token     :string(255)
+#
 
