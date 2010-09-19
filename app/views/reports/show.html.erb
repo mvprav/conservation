@@ -22,6 +22,11 @@
               <label class="name">Report Description</label>
               <p class="rounded-5"><%=@report.description%></p>
             </li>
+	    <% if @report.user==current_user || current_user.admin?%>
+	    <li>
+	      <%= link_to "Delete", report_path(@report), :method => :delete,:confirm=>"Are you sure you want to delete the report?" %>
+	    </li>
+	    <%end%>
 	    <%=hidden_field_tag(:lat,@report.lat)%>
 	    <%=hidden_field_tag(:lng,@report.lng)%>
 	  </ol>	

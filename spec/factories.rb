@@ -14,6 +14,8 @@ Factory.define :report do |report|
   report.association :location
   report.incident_date Date.today
   report.association :user
+  report.lat '1.2'
+  report.lng '1.3'
 end
 
 

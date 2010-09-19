@@ -11,7 +11,7 @@ class ReportsController < ApplicationController
 
   def correct_user
     @report=Report.find(params[:id])
-    unless @report.user==current_user
+    unless @report.user==current_user || current_user.admin?
       flash[:notice]="Access denied"
       redirect_to report_path @report 
     end

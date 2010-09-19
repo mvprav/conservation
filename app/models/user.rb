@@ -43,6 +43,7 @@ class User < ActiveRecord::Base
 end
 
 
+
 # == Schema Information
 #
 # Table name: users
@@ -54,5 +55,6 @@ end
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  remember_token     :string(255)
+#  admin              :boolean
 #
 

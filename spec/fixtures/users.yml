@@ -8,6 +8,7 @@ two:
   name: MyString
   email: MyString
 
+
 # == Schema Information
 #
 # Table name: users
@@ -19,5 +20,6 @@ two:
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  remember_token     :string(255)
+#  admin              :boolean
 #
 

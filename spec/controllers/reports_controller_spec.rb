@@ -266,6 +266,23 @@ describe ReportsController do
           response.should redirect_to home_path
         end 
       end
+
+      describe "For admin user" do
+         before(:each) do
+          @user=Factory(:user)
+          test_sign_in @user
+        end
+        
+        it "should delete the report" do
+          @user.toggle!(:admin)
+          @report=Factory(:report)
+          Report.stub!(:find,@report.id).and_return(@report)
+          @report.should_receive(:delete)
+          delete :destroy , :id=>@report
+          response.should redirect_to home_path
+        end 
+
+      end
     end
   end
 end

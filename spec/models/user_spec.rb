@@ -134,7 +134,21 @@ describe User do
       @user.remember_token.should_not be_nil
     end 
   end
+
+  describe "Roles" do
+    it "should not be admin by default" do
+      @user= User.new(@attr)
+      @user.should_not be_admin
+    end 
+
+    it "should be convertable to admin" do
+      @user= User.new(@attr)
+      @user.toggle!(:admin)
+      @user.should be_admin
+    end 
+  end
 end 
+
 
 
 # == Schema Information
@@ -148,5 +162,6 @@ end
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  remember_token     :string(255)
+#  admin              :boolean
 #
 
