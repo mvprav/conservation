@@ -540,3 +540,8 @@ a.active {
 #slideshow-nav li a {
 	background-image: url(../images/slideshow-nav.png);
 }
+textarea.badge {
+  height: 150px;
+  padding: 5px;
+  width: 190px;
+}
