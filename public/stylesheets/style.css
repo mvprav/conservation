@@ -518,7 +518,8 @@ a.active:hover {
 	overflow: visible;
 	font-size: 11px;
 	display: inline;
-	padding:10px 10px 10px 10px;	
+	padding:10px 10px 10px 10px;
+	height:318px;
 }
 
 #report-page-display {
