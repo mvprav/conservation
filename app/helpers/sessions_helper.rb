@@ -47,4 +47,8 @@ module SessionsHelper
   def clear_return_to
     session[:return_to]=nil
   end
+  
+  def admin?
+    (!current_user.nil?)&&(current_user.admin?)
+  end
 end
