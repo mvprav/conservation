@@ -1,23 +1,27 @@
-<h2 id="alpha">Edit User</h2>
+<div id="Edit-user-display" class="rounded-10">
+<h1 id="alpha">Edit User</h1>
 <% form_for @user do |f|%>
 <%= f.error_messages %>
+<br></br>
 <div class="field">
-  <%= f.label :name %><br>
+  <h3><%= f.label :name %><br></h3>
   <%= f.text_field :name %>
 </div>
 <div  class="field">
-  <%= f.label :email %><br>
+  <h3><%= f.label :email %><br></h3>
   <%= f.text_field :email %>
 </div >
 <div  class="field">
-  <%= f.label :password %><br>
+  <h3><%= f.label :password %><br></h3>
   <%= f.password_field :password %>
 </div>
 <div  class="field">
-  <%= f.label :password_confirmation %><br>
+  <h3><%= f.label :password_confirmation %><br></h3>
   <%= f.password_field :password_confirmation %>
 </div>
+<br></br>
 <div  class="field">
   <%= f.submit "Update" %>
 </div>
 <% end %>
+</div>
