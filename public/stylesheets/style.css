@@ -523,9 +523,20 @@ a.active:hover {
 	display: inline;
 	padding:10px 10px 10px 10px;
 	height:335px;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-weight: normal;
-	line-height: 140%;
+}
+
+#Sign-in-display {
+	background: #f2f2f2;
+	width:920px;
+	height:450px;
+	margin: 0 0 0 0;
+	float: left;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	font-size: 11px;
+	display: inline;
+	padding:10px 10px 10px 10px;	
 }
 
 #report-page-display {

@@ -1,16 +1,21 @@
+<div id="Sign-in-display" class="rounded-10">
 <h1>Sign in</h1>
 <% form_for(:session , :url=>sessions_path) do |f|%>
+<br></br>
 <div class="field">
-  <%=f.label :email%><br>
+  <h4><%=f.label :email%><br></h4>
   <%=f.text_field :email%>
 </div>
+<br></br>
 <div>
-  <%=f.label :password%><br>
+  <h4><%=f.label :password%><br></h4>
   <%=f.password_field :password%>
 </div>
+<br></br>
 <div class="actions">
   <%=f.submit "Sign in"%>
 </div>
 <%end%>
 
-<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+<h4><p>New user? <%= link_to "Sign up now!", signup_path %></p><h4>
+</div>
