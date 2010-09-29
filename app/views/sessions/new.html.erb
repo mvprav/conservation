@@ -3,12 +3,12 @@
 <% form_for(:session , :url=>sessions_path) do |f|%>
 <br></br>
 <div class="field">
-  <h4><%=f.label :email%><br></h4>
+  <h3><%=f.label :email%><br></h3>
   <%=f.text_field :email%>
 </div>
 <br></br>
 <div>
-  <h4><%=f.label :password%><br></h4>
+  <h3><%=f.label :password%><br></h3>
   <%=f.password_field :password%>
 </div>
 <br></br>
@@ -17,5 +17,5 @@
 </div>
 <%end%>
 
-<h4><p>New user? <%= link_to "Sign up now!", signup_path %></p><h4>
+<h4><p>New user? <%= link_to "Register now!", signup_path %></p></h4>
 </div>
