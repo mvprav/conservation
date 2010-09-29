@@ -178,7 +178,7 @@ h6 {font-size: 11px}
 
 #header-outer h1 {
 	position: absolute;
-	top: 10px;
+	top: 6px;
 	left: 0px;
 	margin-left: 10px;
 		 }
@@ -503,7 +503,7 @@ a.active:hover {
 	overflow: visible;
 	font-size: 11px;
 	display: inline;
-	padding:10px 10px 0 10px;
+	padding: 0 10px 0 10px;
 	height:310px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	font-weight: normal;
@@ -1247,3 +1247,182 @@ ul.jaybich-recent-posts li a {
 	color: #555;
 	font-size: 11px;
 }
+.content-box,
+.content-box-header,
+ul.content-box-tabs li a.current,
+.shortcut-button,
+.notification {
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+				border-radius: 6px;
+                }
+
+.content-box-header {
+                -moz-border-radius-bottomleft: 0;
+                -moz-border-radius-bottomright: 0;
+                -webkit-border-bottom-left-radius: 0;
+                -webkit-border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+                }
+				
+.closed-box .content-box-header {
+                -moz-border-radius-bottomleft: 6px;
+                -moz-border-radius-bottomright: 6px;
+                -webkit-border-bottom-left-radius: 6px;
+                -webkit-border-bottom-right-radius: 6px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+                }
+
+ul.content-box-tabs li a.current {
+                -moz-border-radius-bottomleft: 0;
+                -moz-border-radius-bottomright: 0;
+                -webkit-border-bottom-left-radius: 0;
+                -webkit-border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+                }
+				
+
+.shortcut-button span {
+                -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+				border-radius: 7px;
+                }
+                
+.content-box {
+                border: 1px solid #ccc;
+                margin: 0 0 20px 0;
+                background: #fff;
+                }
+
+.content-box-header {
+                background: #e5e5e5 url('../images/bg-content-box.gif') top left repeat-x;
+                margin-top: 1px;
+                height: 40px;
+                }
+
+.content-box-header h3 {
+                padding: 12px 15px 10px;
+                float: left;
+                }
+
+ul.content-box-tabs {
+                float: right;
+                padding: 12px 15px 0 0 !important;
+				margin: 0 !important;
+                }
+
+ul.content-box-tabs li {
+                float: left;
+                margin: 0;
+                padding: 0 !important;
+                background-image: none !important;
+                }
+                
+ul.content-box-tabs li a {
+                color: #333;
+                padding: 8px 10px;
+                display: block;
+                margin: 1px;
+                border-bottom: 0;
+                }
+
+ul.content-box-tabs li a:hover {
+                color: #57a000;
+                }              
+                
+ul.content-box-tabs li a.current {
+                background: #fff;
+                border: 1px solid #ccc;
+                border-bottom: 0;
+                margin: 0;
+                }
+
+.content-box-content {
+                padding: 20px;
+                font-size: 13px;
+                border-top: 1px solid #ccc;
+                }
+                
+.clear {
+                clear: both;
+                }
+                
+/* START slideshow wrapper */
+#slideshow-wrapper {
+	float:left;
+	width:100%;
+	margin-top:0px;
+	height:290px;
+}
+#slideshow {
+    height:300px;
+    position:relative;	
+	width:260px;
+}
+#slideshow li {
+    height:300px;	
+    left:0;	
+    opacity:0.0;	
+    position:absolute;
+    top:0;
+    z-index:8;
+}
+#slideshow li.active {
+    opacity:1.0;
+    z-index:10;
+}
+#slideshow li.last-active {
+    z-index:9;
+}
+.slide-1-img {
+	float:left;
+	width:641px;
+}
+.slide-1-desc {
+	float:left;
+	height:281px;
+	position:relative;
+	width:319px;
+}
+.slide-1-desc h1, .slide-1-desc p {
+	float:left;
+	width:284px;
+	margin:10px 10px 0 16px;
+}
+.slide-1-desc h1 {
+	padding-bottom:5px;
+}
+.slideshow-rm {
+	bottom:16px;
+	height:18px;
+	left:16px;
+	position:absolute;
+	width:80px;
+}
+.slideshow-rm a, .body-rm a, .reverse-arrow a {
+	display:block;
+	float:left;
+	margin-left:22px;
+}
+.slide-txt { /* styles for semi-tranparent background in the slideshow */
+	background:url('../images/slide_tr.png') no-repeat top;	
+	bottom:0;
+	height:64px;	
+	left:0;	
+	position:absolute;
+	width:240px;
+	text-align:center;
+}
+.slide-txt a {
+	color:#f4f0be;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 14px;
+}
+
+.slide-txt h3 {
+	margin:5px 5px 0 5px;
+}
+/* END slideshow wrapper */

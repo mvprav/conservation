@@ -1,0 +1,98 @@
+﻿/* This css file serves as a template for styling your kwicks.  Feel free to modify, but please make note of the comments - some of them are important. */
+
+.kwicks {
+	/* recommended styles for kwicks ul container */
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background:#000;
+}
+.kwicks li{
+	/* these are required, but the values are up to you (must be pixel) */
+	width: 110px;
+	height: 195px;
+
+	/*do not change these */
+	display: block;
+	overflow: hidden;
+	padding: 0;  /* if you need padding, do so with an inner div (or implement your own box-model hack) */
+}
+.kwicks.horizontal li {
+	/* This is optional and will be disregarded by the script.  However, it should be provided for non-JS enabled browsers. */
+	margin-right: 0px; /*Set to same as spacing option. */	
+	float: left;
+	background: #000 url(../images/preloader.gif) no-repeat;
+	background-position: 118px 237px;
+}
+.kwicks.vertical  li{
+	/* This is optional and will be disregarded by the script.  However, it should be provided for non-JS enabled browsers. */
+	margin-bottom: 5px; /*Set to same as spacing option. */	
+}
+
+.kwickshadow {
+z-index: 10;
+background: url(../images/kwickshadow.png) repeat-y;
+position: absolute;
+right: 0px;
+height: 474px;
+width: 27px;
+}
+
+
+
+
+	.slideimage {float:left;padding:0;margin:0;}
+	
+	
+	.slide-minicaption {
+	top:50px;
+	right:0;
+	float:right;
+	position:absolute;
+	color:#fff;
+	padding:10px 10px 10px 15px;
+	font-size:12px;
+	line-height:18px;
+	background:#111;
+	width: 10px;
+
+	}
+	
+	.slide-minicaptiontitle {
+		font-size:16px; letter-spacing:0; color:#fff; display:block;
+		line-height:23px;
+
+	}
+	
+	.slidecaption {
+	top:50px;
+	right:0;
+	float:right;
+	position:absolute;
+	color:#fff;
+	padding:15px;
+	font-size:12px;
+	line-height:18px;
+	background:#111;
+	width: 300px;
+
+	}
+	
+	.slidecaption a {color:#fff; }
+	.slidecaption a:hover {text-decoration:none;}
+	
+
+.slidecaptiontitle {
+	font-size:26px; letter-spacing:-1px; font-weight:bold; color:#fff; display:block;
+	padding-bottom:10px;
+
+}
+
+	.slidecaptiontitle a {
+		color:#fff;
+	}
+	
+	.slidecaptiontitle a:hover {
+		color:#fff; text-decoration:none;
+	}
