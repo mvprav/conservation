@@ -21,7 +21,7 @@ a:hover {
 }
 
 #content ul li, #full-width-content ul li {
-	background: url(style3/content-bullet.png) no-repeat scroll 12px 4px;
+	background: url(../images/content-bullet.png) no-repeat scroll 12px 4px;
 }
 
 #content blockquote, #full-width-content blockquote {
@@ -122,10 +122,12 @@ a.active {
 
 #index-cloud1 {
 	background:#ffffff;
-	padding:5px 2px 2px 2px;
+	padding:2px 2px 2px 2px;
 	vertical-align:middle;
-	height:160px;
+	height:180px;
+	line-height:180%;
 }
+
 
 #home-display {
 	background: #f2f2f2;
@@ -144,7 +146,7 @@ a.active {
 	background: #f2f2f2;
 	padding: 10px;
 	width: 240px;
-	height: 170px;
+	height: 190px;
 	margin: 0 0 10px 0;
 	float: left;
 	text-align: left;
@@ -228,10 +230,10 @@ a.active {
 
 /* START table styles */
 .tbl thead tr .thead-leftc { /* table left rounded corner */
-	background:#5eba62 url(style3/tbl_left_rounded.gif) no-repeat top left;
+	background:#5eba62 url(../images/tbl_left_rounded.gif) no-repeat top left;
 }
 .tbl thead tr .thead-rightc {/* table right rounded corner */
-	background:#5eba62 url(style3/tbl_right_rounded.gif) no-repeat top right;
+	background:#5eba62 url(../images/tbl_right_rounded.gif) no-repeat top right;
 }
 .tbl thead tr td { /* table header background */
 	background:#5eba62;	
@@ -430,6 +432,68 @@ a.active {
 	width:880px;
 }
 
+/* REPORT PAGE FILTERS */
+
+#report-filter-box {
+	width:420px;
+	float:left;
+	padding:10px;
+}
+
+#report-filter {
+	background-color: #ffffff;
+	margin: 10px 10px 0 0;
+	position: relative;
+	padding: 10px;
+	width:900px;
+	float:left;
+	overflow: inherit;
+}
+
+#report-filter input, #report-filter textarea, #report-filter select {
+	background-color: #f2f2f2;
+	color: #666;
+	border: 0px solid #b9b9b9;
+}
+
+#report-filter #submit {
+	background-color: #f0f0f0;
+	border: 1px solid #b9b9b9;
+}
+
+#report-filter option {
+	background-color: #f0f0f0;
+	border:0;
+	border-bottom: 1px solid white;
+}
+
+#report-filter option:hover {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid white;
+}
+
+#report-filter option:focus {
+	background-color: #f0f0f0;
+	border:o;
+	border-bottom: 1px solid white;
+}
+
+#report-filter #submit:hover {
+	background-color: #f8f8f8;
+	cursor:pointer;
+}
+
+#report-filter #upload {
+	background-color: #f0f0f0;
+	border: 1px solid #b9b9b9;
+	margin-left:8px;
+	position:absolute;
+}
+
+#report-filter #upload:hover {
+	background-color: #f8f8f8;
+	cursor:pointer;
+}
 
 /* CONTACT FORM */
 
@@ -531,17 +595,4 @@ a.active {
 	color: #333;
 }
 
-/* Homepage Slideshow */
 
-#slideshow-nav {
-	background-color: #fff;	
-}
-
-#slideshow-nav li a {
-	background-image: url(../images/slideshow-nav.png);
-}
-textarea.badge {
-  height: 150px;
-  padding: 5px;
-  width: 190px;
-}
