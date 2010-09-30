@@ -1,4 +1,9 @@
+
+<div id="report-page-display" class="rounded-10" style="left: 0px; top: 0px"><h2>Filters</h2>
+<div id="report-filter" class="rounded-10">
+
 <% form_for :filtercondition, :action=>'index', :html => { :method => :get } do |f|%>
+
   <%= f.label :location %>
   <%= f.select(:location_id,@locations.collect{|location|[location.name,location.id]},
                {:selected=>params[:filtercondition][:location_id].to_i,:include_blank=>true},:class=>'width required')%> &nbsp;
@@ -13,12 +18,15 @@
   <%= f.label :date_to%>
   <%=f.text_field :date_to,:style=>['width:100px'],:value=>params[:filtercondition][:date_to]%>&nbsp;
 
-  <%= f.submit "Filter Report" %>
+  <%= f.submit "Submit" %>
 <% end %>
- 
+</div>
+</div>
+ <br></br>
+ <h4>Filtered Reports</h4>
 <div class="tabber">
-    <div class="tabbertab" title="reports">
-    <div id="report-page-display" class="rounded-10" style="width:100%">
+    <div class="tabbertab" title="Reports">
+    <div id="tabular" class="rounded-10" style="width:100%">
       <%= will_paginate%>
           <table class="tbl" cellpadding="0" cellspacing="0">
 	<thead>
@@ -31,7 +39,7 @@
 	</thead>
 	<tbody>
 	  <%@reports.each do |report|%>
-	  <tr class="odd">
+	  <tr class="even">
 	    <td class="td-6"><%=link_to report.title,report_path(report)%></td>
 	    <td class="td-7"><%=report.location.name%></td>
 	    <td class="td-8"><%=report.incident_date%></td>
@@ -50,6 +58,7 @@
   </div>
 
 </div>
+
 
 <script type="text/javascript">
 

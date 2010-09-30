@@ -254,7 +254,14 @@ a.active {
 #map {
 	background-color: #ffffff;
 	height:400px;
-	margin-top:50px;
+	margin-top:10px;
+	width:490px;
+}
+
+#tabular {
+	background-color: #ffffff;
+	height:400px;
+	margin-top:10px;
 	width:490px;
 }
 
@@ -437,16 +444,18 @@ a.active {
 	width:420px;
 	float:left;
 	padding:10px;
+	
 }
 
 #report-filter {
 	background-color: #ffffff;
-	margin: 10px 10px 0 0;
+	margin: 10px 10px 10px 0;
 	position: relative;
 	padding: 10px;
 	width:900px;
 	float:left;
 	overflow: inherit;
+	height: 50px;
 }
 
 #report-filter input, #report-filter textarea, #report-filter select {
