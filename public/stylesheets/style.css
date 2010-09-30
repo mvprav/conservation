@@ -570,6 +570,19 @@ a.active:hover {
 #report-page-display {
 	background: #f2f2f2;
 	width:920px;
+	margin: 0 0 10px 0;
+	float: left;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	font-size: 11px;
+	display: inline;
+	padding:10px 10px 10px 10px;	
+}
+
+#report-tab-display {
+	background: #f2f2f2;
+	width:920px;
 	margin: 0 0 0 0;
 	float: left;
 	text-align: left;
