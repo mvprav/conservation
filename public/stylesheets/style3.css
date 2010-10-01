@@ -258,6 +258,7 @@ a.active {
 	width:490px;
 }
 
+
 #tabular {
 	background-color: #ffffff;
 	height:400px;
@@ -411,13 +412,14 @@ a.active {
 #report-detail {
 	background: #f2f2f2;
 	width: 940px;
-	margin: 0 10px 0 0;
-	float: left;
+	height: 800 px;
+	margin: 0 0 0 0;
+	float: none;
 	text-align: left;
 	position: relative;
 	overflow: hidden;
 	font-size: 11px;
-	padding:10px;
+	display: block;
 }
 
 #report-description-box label.name {

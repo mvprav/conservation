@@ -1,5 +1,5 @@
 <div id="report-detail" class="rounded-10">           
-  <div id="detail-box">
+  <div id="contact-box"><h2>Report Details</h2>        
         <div id="report-display" class="rounded-10">
 	  <ol>
 	    <li>
@@ -20,7 +20,7 @@
 	    </li>
             <li>
               <label class="name">Report Description</label>
-              <p class="rounded-5"><%=@report.description%></p>
+              <p class="rounded-5 "><%=@report.description%></p>
             </li>
 	    <% if @report.user==current_user || admin?%>
 	    <li>
@@ -42,12 +42,13 @@
  
     </div>
   </div>   
-  <div id="map_div">
-    <div id="map"></div>
-  </div>
+   
+   
+  
+      <div id="map"></div>
     
+ 
 </div>
-
 <script>
 
   $("#map").mapWithSingleMarker({lat: 'lat',lng:'lng',from_server: true,edit_marker:false})

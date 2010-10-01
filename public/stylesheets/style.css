@@ -638,16 +638,28 @@ a.active:hover {
 }
 
 #pic-box {
-	margin: 0 0 0 0;
- 	float: left;
+	margin: 0 10px 10px 0;
+	float: right;
 	text-align: left;
 	position: relative;
 	overflow: hidden;
 	font-size: 11px;
 	width:490px;
+	padding-top: 55px;
 }
 
+
+#map-box {
+	margin: 0 10px 0 0;
+	float: right;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	font-size: 11px;
+	width:490px;
+	padding-top: 200px;
 }
+
 
 .footer-box {
 	width: 150px;
@@ -675,6 +687,10 @@ a.active:hover {
 }
 
 /* ALL ROUNDED CORNER BOXES */
+
+.desc-height {
+	height:277px;
+}
 
 .rounded-10 {
   -moz-border-radius: 10px;
