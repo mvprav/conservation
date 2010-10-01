@@ -16,3 +16,4 @@ public/system
 .rb#
 db/schema.rb
 config/database.yml
+nbproject
