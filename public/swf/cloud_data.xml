@@ -1,19 +1,13 @@
 <tags>
-<a href="conservation" hicolor="0xd4c314" color="0x8a8870" style="font-size:58">conservation</a>
-<a href="understand" hicolor="0x3a2a38" color="0xeddea2" style="font-size:38">understand</a>
-<a href="threats" hicolor="0x345de1" color="0xa997f3" style="font-size:78">threats</a>
-<a href="karnataka" hicolor="0x48da0b" color="0x462940" style="font-size:38">karnataka</a>
-<a href="wildlife" hicolor="0x131ec7" color="0x4abf0d" style="font-size:78">wildlife</a>
-<a href="help" hicolor="0xc2b30a" color="0x8da619" style="font-size:46">help</a>
-<a href="poaching" hicolor="0x1f34b1" color="0xc419f4" style="font-size:38">poaching</a>
-<a href="conservationthreats" hicolor="0x21a071" color="0x96331f" style="font-size:38">conservationthreats</a>
-<a href="org" hicolor="0x2acd2a" color="0xe078f1" style="font-size:38">org</a>
-<a href="enthusiasts" hicolor="0xc3da68" color="0xa1f1c4" style="font-size:38">enthusiasts</a>
-<a href="location" hicolor="0x e2ec1" color="0x359315" style="font-size:38">location</a>
-<a href="road" hicolor="0x  43a3" color="0x342f30" style="font-size:38">road</a>
-<a href="test" hicolor="0x107ae1" color="0xf1b91f" style="font-size:38">test</a>
-<a href="nagarhole" hicolor="0x8560cd" color="0xdb1a99" style="font-size:53">nagarhole</a>
-<a href="cattle" hicolor="0xace2c0" color="0x2d33e4" style="font-size:46">cattle</a>
-<a href="parks" hicolor="0xe09273" color="0x81a5d4" style="font-size:46">parks</a>
-<a href="bandipur" hicolor="0xb7bc54" color="0x1abcab" style="font-size:38">bandipur</a>
+<a href="/understandthreats/poaching" hicolor="0x96331f" color="0x359316" style="font-size:16">Poaching</a>
+<a href="/understandthreats/frag" hicolor="0x96331f" color="0x359316" style="font-size:16">Fragmentation</a>
+<a href="/understandthreats/fire" hicolor="0x96331f" color="0x359316" style="font-size:16">Forest Fires</a>
+<a href="/understandthreats/conflict" hicolor="0x96331f" color="0x359316" style="font-size:16">Conflict</a>
+<a href="/understandthreats/grazing" hicolor="0x96331f" color="0x359316" style="font-size:16">Grazing</a>
+<a href="/understandthreats/mining" hicolor="0x96331f" color="0x359316" style="font-size:16">Mining</a>
+<a href="/understandthreats/NTFP" hicolor="0x96331f" color="0x359316" style="font-size:16">NTFP</a>
+<a href="/understandthreats/roadKills" hicolor="0x96331f" color="0x359316" style="font-size:16">Road Kills</a>
+<a href="/understandthreats/smuggling" hicolor="0x96331f" color="0x359316" style="font-size:16">Smuggling</a>
+<a href="/understandthreats/tourism" hicolor="0x96331f" color="0x359316" style="font-size:16">Tourism</a>
+<a href="/understandthreats/others" hicolor="0x96331f" color="0x359316" style="font-size:16">Others</a>
 </tags>
