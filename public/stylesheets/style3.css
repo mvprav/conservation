@@ -14,11 +14,21 @@ a {
 	color: #5eba62;
 	text-decoration: none;
 }
+a2 {
+color: #5eba62;
+		text-decoration: underline;
+}
+
+a1 {
+		text-decoration: underline;
+}
 
 a:hover {
 	color: #6bbf6e;
 	text-decoration: underline;
 }
+
+
 
 #content ul li, #full-width-content ul li {
 	background: url(../images/content-bullet.png) no-repeat scroll 12px 4px;
