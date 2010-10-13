@@ -71,6 +71,8 @@ class ReportsController < ApplicationController
 
   def reports_json
     @filter=FilterCondition.new(params[:filtercondition]||={})
-    render :json =>Report.find(:all,:conditions=>@filter.condition).to_json(:only=>[:id,:lat,:lng])
+    render :json =>Report.find(:all,:conditions=>@filter.condition).
+      to_json(:only=>[:id,:lat,:lng,:title,:name],
+              :include=>[:category,:location])
   end
 end

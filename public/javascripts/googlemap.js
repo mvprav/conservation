@@ -87,20 +87,49 @@ $.widget("map.multipleMarker",{
 	
     },
     updateMarkers:function(){
+	
+
 	self=this;
 	$.ajax({ url: "reports_json?"+$("form").serialize(), success: function(data){
 	    $.each(data,function(index,val){
+		var report=val.report
 		if(val.report.lat!=null && val.report.lng!=null){
+		    var infowindow = new google.maps.InfoWindow({
+			content: self.infoContent(report),
+			maxWidth:400
+		    });
 		    var latlng  = new google.maps.LatLng(val.report.lat,val.report.lng);
 		    self.marker = new google.maps.Marker({
 			position: latlng, 
 			map: self.map,
-			dragable: true
+			dragable: false,
+			title:report.title
+
+		    });
+		    google.maps.event.addListener(self.marker, 'click', function() {
+			infowindow.open(self.map,self.marker);
 		    });
 		}
 	    })
 	}})
+    },
+    infoContent:function(report){
+	var contentString = '<div id="content">'+
+	    '<div id="siteNotice">'+
+	    '</div>'+
+	    '<h1 id="firstHeading" class="firstHeading">'+report.title+'</h1>'+
+	    '<div id="bodyContent">'+
+	    '<p><b>Category :</b> '+report.category.name+
+	    '<br/><b>Location :</b> '+ report.location.name+
+	    '<br/><b>Report :</b> <a href="/reports/'+report.id+'">' +
+	    'http://conservationthreats.org/reports/'+report.id+
+	    '</div>'+
+	    '</div>';
+
+	return contentString;
     }
+
+
 
 	       
 })
