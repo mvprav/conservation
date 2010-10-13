@@ -19,13 +19,7 @@ p {
 	text-align: left;
 }
 
-a {
-	text-decoration: none;
-}
 
-a:hover {
-	text-decoration: underline;
-}
 
 h1, h2, h3, h4, h5, h6 {margin: 5px 0; font-weight: normal; line-height: 100%;}
 
@@ -1485,9 +1479,9 @@ ul.content-box-tabs li a.current {
 	text-align:center;
 }
 .slide-txt a {
-	color:#f4f0be;
+	color:#5eba62;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .slide-txt h3 {

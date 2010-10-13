@@ -16,7 +16,8 @@ a {
 }
 a2 {
 color: #5eba62;
-		text-decoration: underline;
+text-decoration: none;
+font-size:11px;
 }
 
 a1 {
@@ -25,7 +26,7 @@ a1 {
 
 a:hover {
 	color: #6bbf6e;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
