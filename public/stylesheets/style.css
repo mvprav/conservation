@@ -1476,9 +1476,9 @@ ul.content-box-tabs li a.current {
 	margin-left:22px;
 }
 .slide-txt { /* styles for semi-tranparent background in the slideshow */
-	background:url('../images/slide_tr.png') no-repeat top;	
+	background:#ffffff;	
 	bottom:0;
-	height:64px;	
+	height:54px;	
 	left:0;	
 	position:absolute;
 	width:240px;
