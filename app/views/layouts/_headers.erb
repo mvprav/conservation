@@ -15,8 +15,8 @@
     <%= link_to "Understand Threats", understandthreats_main_path %> |
     <%= link_to "Report a Threat", new_report_path %> |
     <%= link_to "Reports", reports_path %> |
-    <%= link_to "FAQ", '#' %> |
-    <%= link_to "Contact", '#' %> 
+    <%= link_to "FAQ", pages_path(:faq) %> |
+    <%= link_to "Contact", pages_path(:contact) %> 
     <% if signed_in? %> 
     | <%= link_to "Profile", current_user %> |
     <%= link_to "Settings", edit_user_path(current_user) %>

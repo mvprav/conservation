@@ -10,8 +10,10 @@ ActionController::Routing::Routes.draw do |map|
   map.home '/', :controller=>'home', :action=>'show'
   map.understandthreats 'understandthreats/:page', :controller=>'understandthreats', :action=>'page'
   map.understandthreats_main '/understandthreats', :controller=>'understandthreats', :action=>'page'
-  
+  map.pages '/pages/:name', :controller=>'pages', :action=>'show'
   map.reports_json '/reports_json', :controller=>'reports',:action=>'reports_json'
+
+
  
 
   # The priority is based upon order of creation: first created -> highest priority.
