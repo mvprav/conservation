@@ -360,7 +360,8 @@ a.active {
 	margin: 10px 10px 0 0;
 	position: relative;
 	padding:20px;
-	width: 200px;
+	width: 410px;
+	height: 130px;
 	float:left;
 	overflow: inherit;
 }
