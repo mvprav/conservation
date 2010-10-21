@@ -23,11 +23,11 @@ p {
 
 h1, h2, h3, h4, h5, h6 {margin: 5px 0; font-weight: normal; line-height: 100%;}
 
-h1 {font-size: 30px;}
+h1 {font-size: 30px}
 
 h2 {font-size: 25px}
 
-h3 {font-size: 15px;}
+h3 {font-size: 15px}
 
 h4 {font-size: 14px}
 
@@ -562,6 +562,20 @@ a.active:hover {
 }
 
 #Faq-user-display {
+	background: #f2f2f2;
+	width:920px;
+	height:450px;
+	margin: 0 0 0 0;
+	float: left;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+	font-size: 11px;
+	display: inline;
+	padding:10px 10px 10px 10px;	
+}
+
+#About-user-display {
 	background: #f2f2f2;
 	width:920px;
 	height:450px;
@@ -1140,12 +1154,12 @@ a.active:hover {
 /* FOOTER */
 
 #footer {
-	padding: 0 0 20px 0;
+	padding: 5px 0 20px 0;
 	margin: auto;
 	padding-left: 0px;
 	width: 940px;
 	overflow: hidden;
-	text-align: left;
+	text-align: Right;
 }
 
 /* ADD ONS */
