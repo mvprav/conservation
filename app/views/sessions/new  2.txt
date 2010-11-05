@@ -1,0 +1,22 @@
+1> company registration / legal / disclaimer / terms and conditions -- santhosh p c == 2 weeks
+		company name/domain name. 
+		address.
+
+2> Sales collaterals....--Gautham == 4 weeks
+
+3> Payment Gateway Integration ---Harsha/Naga/Hari == 2 weeks
+	Integration with test account.
+	check list for opening up the PGS.
+	Negotiate the best possible price with ebspayments. ( direct pay / CCAvenues ). explore other possible PGSs ?
+
+4> Dev Task == iteration 1 == 4 weeks.
+--- Stress Test
+--- Security
+--- Usablity
+
+5> Home Page Website --- Prakash/Praveen/Hari == 4 weeks
+ UI Customization --- Prakash/Praveen/Hari
+ 
+6> Hosting Price and Options ( cost for supporting 100 customers + ssl certificate charges) --> S G / P P H N == 1 week
+
+7>
