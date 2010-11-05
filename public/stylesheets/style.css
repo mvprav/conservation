@@ -1154,12 +1154,10 @@ a.active:hover {
 /* FOOTER */
 
 #footer {
-	padding: 5px 0 20px 0;
-	margin: auto;
-	padding-left: 0px;
+	padding: 0px 5px 5px 605px;
+	margin: 0px;
 	width: 940px;
 	overflow: hidden;
-	text-align: Right;
 }
 
 /* ADD ONS */
