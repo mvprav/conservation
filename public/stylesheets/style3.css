@@ -545,6 +545,15 @@ a.active {
 	overflow: inherit;
 }
 
+#easysteps {
+	background-color: #ffffff;
+	margin: 10px 10px 0 0;
+	position: relative;
+	padding: 10px;
+	width:900px;
+	float:left;
+	overflow: inherit;
+}
 #contact input, #contact textarea, #contact select {
 	background-color: #f2f2f2;
 	color: #666;
