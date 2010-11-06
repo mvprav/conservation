@@ -1498,7 +1498,7 @@ ul.content-box-tabs li a.current {
 .slide-txt { /* styles for semi-tranparent background in the slideshow */
 	background:#ffffff;	
 	bottom:0;
-	height:54px;	
+	height:43px;	
 	left:0;	
 	position:absolute;
 	width:240px;
