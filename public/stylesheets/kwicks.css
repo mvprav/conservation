@@ -71,7 +71,7 @@ width: 27px;
 	float:right;
 	position:absolute;
 	color:#fff;
-	padding:15px;
+	padding:10px;
 	font-size:12px;
 	line-height:18px;
 	background:#111;
@@ -84,7 +84,7 @@ width: 27px;
 	
 
 .slidecaptiontitle {
-	font-size:26px; letter-spacing:-1px; font-weight:bold; color:#fff; display:block;
+	font-size:14px; letter-spacing:-1px; font-weight:bold; color:#fff; display:block;
 	padding-bottom:10px;
 
 }

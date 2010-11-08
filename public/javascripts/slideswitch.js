@@ -28,5 +28,5 @@ function slideSwitch() {
 }
 
 $(function() {
-    setInterval( "slideSwitch()", 7000 );
+    setInterval( "slideSwitch()", 5000 );
 });
