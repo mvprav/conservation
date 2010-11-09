@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user]) 
     if @user.save 
       sign_in @user
-      flash[:success]="Welcome to conservation site"
+      flash[:success]="Welcome to Conservation Threats site"
       redirect_to @user
     else 
       @title = "Sign up" 

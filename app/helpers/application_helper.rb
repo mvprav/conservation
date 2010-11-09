@@ -1,7 +1,7 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   def title 
-    base_title = "Conservation" 
+    base_title = "Conservation Threats" 
     if @title.nil? 
       base_title 
     else 
