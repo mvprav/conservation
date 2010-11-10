@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
 
   def has_password?(submitted_password)
     unless submitted_password.nil?
-      self.encrypted_password==submitted_password
+      self.encrypted_password==secure_hash(submitted_password)
     end
   end 
   
@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
   private 
   def encrypt_password
     unless password.nil?
-      self.encrypted_password=password
+      self.encrypted_password=secure_hash(password)
     end
   end
   def secure_hash(string)

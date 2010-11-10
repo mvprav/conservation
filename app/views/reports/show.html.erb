@@ -12,7 +12,7 @@
 	    </li>
 	    <li>
 	      <label class="name">Date</label>
-	      <p class="rounded-5"><%=@report.incident_date%></p>
+	      <p class="rounded-5"><%=@report.incident_date.to_s("dd/mm/yyyy")%></p>
 	    </li>
 	    <li>
 	      <label class="name">Threat Category</label>

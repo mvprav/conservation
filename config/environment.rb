@@ -44,6 +44,11 @@ Rails::Initializer.run do |config|
   config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
   config.gem 'paperclip', :version=>"2.3.3"
   config.gem "faker", :lib => false, :version => ">= 0.3.1"
+  my_date_formats = { :default => '%d/%m/%Y' }
+
+  ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(my_date_formats)
+
+  ActiveSupport::CoreExtensions::Date::Conversions::DATE_FORMATS.merge!(my_date_formats) 
 				 
 end
 require "will_paginate"
