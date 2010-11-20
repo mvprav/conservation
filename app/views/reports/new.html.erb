@@ -6,29 +6,33 @@
     <fieldset>
       <ol>
 	<li>
-	  <%=f.label(:categories,"Select Threat", :class=>"name")%>
+	  <%=f.label(:categories,"Select Threat*", :class=>"name")%>
 	  <%=f.select(:category_id,@categories.map{|c|[c.name,c.id]},{:include_blank=>false},:class=>'width required')%>
 	</li>
 	<li>
-	  <%=f.label :location, 'Select Location', :class=>'name'%>
+	  <%=f.label :location, 'Select Location*', :class=>'name'%>
 	  <%=f.select(:location_id,@locations.map{|l|[l.name,l.id]},{:include_blank=>false},:class=>'width required')%>
 	</li>
 	<li>
-	  <%=f.label :title,'Report Title',:class=>'name'%>
+	  <%=f.label :title,'Report Title*',:class=>'name'%>
 	  <%=f.text_field :title,:class=>'width required' %>
 	</li>
 	<li>
-	   <%=f.label :description,'Description',:class=>'name'%>
+	   <%=f.label :description,'Description*',:class=>'name'%>
 	   <%=f.text_area :description,:class=>'width required'%>
 	</li>
 	<li>
-	  <%=f.label :incident_date,'Date of incident',:class=>'name'%>
+	  <%=f.label :incident_date,'Date of incident*',:class=>'name'%>
 	  <%=f.text_field :incident_date,:class=>'width required'%>
 	</li>
 	<li>
 	  <label for="email" class="name">Upload Photo</label>
 	  <input id="photos" type="file" name="file_1" />
 	  <div id="files_list"></div>
+	</li>
+	<li>
+	  <%=f.label :video,'Video Link',:class=>'name'%>
+	  <%=f.text_field :video,:class=>'width required' %>
 	</li>
 	<li>
 	  <label for="Submit" class="name">&nbsp;</label>
@@ -40,7 +44,7 @@
     </fieldset>
     <%end%>
   </div>
-  </div>
+    </div>
 
   <div id="submit-map-display">
       <div id="map" class="rounded-10">
@@ -48,6 +52,8 @@
   </div> 
   <marquee>Please note the following: ->Incidents to be reported are only for karnataka ->Mutliple Images can be uploaded where each image not bigger than 300 Kb ->Accurately choose the map location</marquee>
 </div>
+
+
 <script type="text/javascript">
   
 $(document).ready(function() {
