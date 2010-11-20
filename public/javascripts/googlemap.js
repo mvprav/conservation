@@ -3,7 +3,6 @@ $.widget
     marker:null,
     options:{from_server: false,edit_marker:true},
     _init: function(){
-	self=this;
 	this._initialize(this.element)
     },
     _initialize:function (mapDiv) {
@@ -25,7 +24,7 @@ $.widget
 	    center: latlng,
 	    mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
-
+	var self
 	self=this
 	var map = new google.maps.Map(mapDiv.get()[0],myOptions);
 	
@@ -88,7 +87,7 @@ $.widget("map.multipleMarker",{
     },
     updateMarkers:function(){
 	
-
+	var self
 	self=this;
 	$.ajax({ url: "reports_json?"+$("form").serialize(), success: function(data){
 	    $.each(data,function(index,val){
