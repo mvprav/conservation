@@ -20,7 +20,7 @@ end
 
 
 class String
-  def shorten (count = 30)
+  def shorten (count = 42)
     string=to_s()
     pp string
     if string.length >= count 

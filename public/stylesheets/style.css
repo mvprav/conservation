@@ -378,30 +378,30 @@ a.active:hover {
 	padding:4px 0 4px 0px;
 }
 .tbl tr .td-1 { 
-	width:280px;
+	width:240px;
 	padding-left:10px; 
 }
 .tbl tr .td-2 {
-	width:80px; 
+	width:190px; 
 }
 .tbl tr .td-3 {
-	width:130px; 
+	width:80px; 
 }
 .tbl tr .td-4 {
-	width:150px; 
+	width:130px; 
 }
 .tbl tr .td-6 {
-	width:420px;
+	width:400px;
 	padding-left:10px;
 }
 .tbl tr .td-7 {
-	width:100px;
+	width:220px;
 }
 .tbl tr .td-8 {
-	width:150px;
+	width:100px;
 }
 .tbl tr .td-9 {
-	width:240px;
+	width:180px;
 }
 /* END table styles */
 
