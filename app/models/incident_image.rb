@@ -1,6 +1,7 @@
 class IncidentImage < ActiveRecord::Base
   has_attached_file :image
   validates_attachment_presence :image
+  validates_attachment_size :photo, :less_than => 3.megabytes
   belongs_to :report
   validates_presence_of :report
 end
