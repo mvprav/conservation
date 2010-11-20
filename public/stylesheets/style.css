@@ -452,7 +452,6 @@ a.active:hover {
 
 #index-text-box1 {
 	width:100%;
-	height:100px;
 	padding:0 10px 0 0;
 	float:left;
 	display:inline;
@@ -497,11 +496,11 @@ a.active:hover {
 	overflow: visible;
 	font-size: 11px;
 	display: inline;
-	padding: 0 10px 0 10px;
-	height:310px;
+	padding: 0 10px 5px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	font-weight: normal;
 	line-height: 140%;
+	
 }
 
 
