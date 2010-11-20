@@ -103,7 +103,6 @@ describe ReportsController do
           "photo_1"=>File.new(RAILS_ROOT + '/spec/fixtures/images/button.png')
         }
         @report.incident_images.length.should == 2
-        @report.incident_images.should
       end 
 
       it "should assign the current user as owner" do
@@ -198,7 +197,8 @@ describe ReportsController do
     it "should return all reports in json format" do
       get :reports_json
       pp response.body
-      response.body.should==@reports_returned.to_json(:only=>[:id,:lat,:lng])
+      response.body.should==@reports_returned.to_json(:only=>[:id,:lat,:lng,:title,:name],
+              :include=>[:category,:location])
     end 
   end
 
