@@ -184,8 +184,7 @@ a.active {
 	text-align: left;
 	position: relative;
 	overflow: hidden;
-	font-size: 11px;
-	padding:0px;
+	padding: 0 0 10px;
 }
 
 #understand-sidebar {
@@ -275,7 +274,7 @@ a.active {
 	background-color: #ffffff;
 	height:400px;
 	margin-top:10px;
-	width:490px;
+	width:470px;
 }
 
 
@@ -539,7 +538,6 @@ a.active {
 /* CONTACT FORM */
 
 #contact-box {
-	width:420px;
 	float:left;
 	padding:10px;
 }
@@ -549,7 +547,6 @@ a.active {
 	margin: 10px 10px 0 0;
 	position: relative;
 	padding: 10px;
-	width:400px;
 	float:left;
 	overflow: inherit;
 }
