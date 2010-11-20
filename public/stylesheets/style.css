@@ -638,13 +638,10 @@ a.active:hover {
 
 #submit-map-display {
 	margin: 0 10px 0 0;
-	float: right;
 	text-align: left;
 	position: relative;
 	overflow: hidden;
-	font-size: 11px;
-	width:490px;
-	padding-top: 45px;
+	padding-top: 40px;
 }
 
 #understand-display-box {
