@@ -92,6 +92,18 @@ describe Report do
       report_without_googlemap_locations.should_not be_valid
     end 
   end
+  it "should truncate title to lenght 30 charaters" do
+    report_with_title_more_than_30_char = Report.new(@valid_attributes.merge(:title=>'1234567890123456789012345678901234567890'))
+    report_with_title_more_than_30_char.title_summary.length.should==30
+    report_with_title_more_than_30_char.title_summary.should=="123456789012345678901234567..."
+  end
+
+  it "should not truncate title if lenght is less than 30 characters " do
+
+    report_with_title_less_than_30_char=Report.new(@valid_attributes.merge(:title=>"abcd"))
+    report_with_title_less_than_30_char.title_summary.should=="abcd"
+                                                  
+  end
 end
 
 

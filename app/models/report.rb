@@ -1,3 +1,4 @@
+require 'pp'
 class Report < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :description 
@@ -11,8 +12,26 @@ class Report < ActiveRecord::Base
   belongs_to :category
   belongs_to :location
   has_many :incident_images
+
+  def title_summary
+    title.shorten
+  end
 end
 
+
+class String
+  def shorten (count = 30)
+    string=to_s()
+    pp string
+    if string.length >= count 
+      shortened = string[0, count-3]
+      shortened.concat('...')
+    else 
+      string
+    end
+  end
+  
+end
 
 
 # == Schema Information

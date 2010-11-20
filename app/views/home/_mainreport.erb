@@ -15,7 +15,7 @@
      <tbody>
        <% @reports.each do |report| %>
        <tr class="odd">
-	 <td class="td-1"><%= link_to h(report.title), report%></td>
+	 <td class="td-1"><%= link_to h(report.title_summary), report%></td>
 	 <td class="td-2"><%=report.location.name%></td>
 	 <td class="td-3"><%=report.incident_date%></td>
 	 <td class="td-4"><%=report.category.name%></td>                                                
