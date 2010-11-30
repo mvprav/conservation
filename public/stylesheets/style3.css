@@ -195,7 +195,6 @@ a.active {
 	text-align: left;
 	position: relative;
 	overflow: hidden;
-	font-size: 11px;
 	padding:0px;
 }
 
@@ -442,13 +441,11 @@ a.active {
 #report-detail {
 	background: #f2f2f2;
 	width: 940px;
-	height: 800 px;
 	margin: 0 0 0 0;
 	float: none;
 	text-align: left;
 	position: relative;
 	overflow: hidden;
-	font-size: 11px;
 	display: block;
 }
 
