@@ -40,13 +40,13 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "mislav-will_paginate", :lib => false#, :version => ">= 2.3.14"
+  config.gem "will_paginate", :lib => false#, :version => ">= 2.3.14"
   config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
   config.gem 'paperclip', :version=>"2.3.3"
   config.gem "faker", :lib => false, :version => ">= 0.3.1"
 
 end
-require "mislav-will_paginate"
+require "will_paginate"
 my_date_formats = { :default => '%d/%m/%Y' }
 
 ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(my_date_formats)
