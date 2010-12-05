@@ -17,3 +17,4 @@ config.action_controller.perform_caching             = false
 config.action_mailer.raise_delivery_errors = false
 
 config.gem "sqlite3-ruby", :lib => "sqlite3", :version=>">=1.3.1"
+config.gem "will_paginate", :lib => false#, :version => ">= 2.3.14"

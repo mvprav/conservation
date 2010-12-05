@@ -27,3 +27,5 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+config.gem 'mislav-will_paginate', :version => '~>2.3.11', :lib => 'will_paginate'   
