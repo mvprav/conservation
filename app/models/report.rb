@@ -7,7 +7,7 @@ class Report < ActiveRecord::Base
   validates_presence_of :incident_date
   validates_presence_of :user
   validates_presence_of :lat,:message=>"Please specify the location in the map."
-  validates_presence_of :lng,:message=>"Please specify the location in the map."
+  validates_presence_of :lng,:message=>"Please attach the picture again incase added."
   belongs_to :user
   belongs_to :category
   belongs_to :location
