@@ -1150,10 +1150,11 @@ a.active:hover {
 /* FOOTER */
 
 #footer {
-	padding: 0px 5px 5px 605px;
-	margin: 0px;
 	width: 940px;
+	position: relative;
+	text-align:right;
 	overflow: hidden;
+	display: inherit;
 }
 
 /* ADD ONS */
