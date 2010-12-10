@@ -521,7 +521,6 @@ a.active:hover {
 #Sign-in-display {
 	background: #f2f2f2;
 	width:920px;
-	height:630px;
 	margin: 0 0 0 0;
 	float: left;
 	text-align: left;
@@ -535,7 +534,6 @@ a.active:hover {
 #Sign-up-display {
 	background: #f2f2f2;
 	width:920px;
-	height:450px;
 	margin: 0 0 0 0;
 	float: left;
 	text-align: left;
@@ -549,7 +547,6 @@ a.active:hover {
 #Edit-user-display {
 	background: #f2f2f2;
 	width:920px;
-	height:450px;
 	margin: 0 0 0 0;
 	float: left;
 	text-align: left;
@@ -577,7 +574,6 @@ a.active:hover {
 #About-user-display {
 	background: #f2f2f2;
 	width:920px;
-	height:450px;
 	margin: 0 0 0 0;
 	float: left;
 	text-align: left;
