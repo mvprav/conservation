@@ -269,11 +269,12 @@ a.active {
 /* END table styles */
 
 
-#map {
+#map 
+{
 	background-color: #ffffff;
-	height:435px;
+	height:500px;
 	margin-top:10px;
-	width:470px;
+	width:460px;
 }
 
 
@@ -546,6 +547,7 @@ a.active {
 	padding: 10px;
 	float:left;
 	overflow: inherit;
+	width:410px;
 }
 
 #easysteps {
