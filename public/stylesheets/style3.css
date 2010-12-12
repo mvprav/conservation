@@ -557,6 +557,37 @@ a.active {
 	float:left;
 	overflow: inherit;
 }
+
+#contactus {
+	background-color: #ffffff;
+	margin: 10px 10px 0 0;
+	position: relative;
+	padding: 10px;
+	width:900px;
+	float:left;
+	overflow: inherit;
+}
+
+#contactus1 {
+	background-color: #ffffff;
+	margin: 10px 10px 0 0;
+	position: relative;
+	padding: 10px;
+	width:430px;
+	float:left;
+	overflow: inherit;
+}
+
+#faqbox {
+	background-color: #ffffff;
+	margin: 10px 10px 0 0;
+	position: relative;
+	padding: 10px;
+	width:900px;
+	float:left;
+	overflow: inherit;
+}
+
 #contact input, #contact textarea, #contact select {
 	background-color: #f2f2f2;
 	color: #666;
