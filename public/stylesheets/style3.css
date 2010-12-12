@@ -369,11 +369,20 @@ a.active {
 	position: relative;
 	padding:20px;
 	width: 410px;
-	height: 130px;
-	float:left;
+	height: 160px;
+	float: left;
 	overflow: inherit;
 }
 
+#badge-wrapper1 {
+	background:#FFFFFF;
+	margin: 10px 10px 0 0;
+	position: relative;
+	padding:20px;
+	width: 410px;
+	float:left;
+	overflow: inherit;
+}
 #submenu {
 	background-color: #ffffff;
 }
