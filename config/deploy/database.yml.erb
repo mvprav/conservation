@@ -16,8 +16,8 @@ test:
   timeout: 5000
 
 production:
-  database: #{Capistrano::CLI.ui.ask("Enter MySQL database name: ")}
-  username: #{Capistrano::CLI.ui.ask("Enter MySQL database username: ")}
-  password: #{Capistrano::CLI.ui.ask("Enter MySQL database password: ")}
   adapter: mysql
+  database: <%= Capistrano::CLI.ui.ask("Enter MySQL database name: ") %>
+  username: <%= Capistrano::CLI.ui.ask("Enter MySQL database username: ") %>
+  password: <%= Capistrano::CLI.ui.ask("Enter MySQL database password: ") %>
   socket: /tmp/mysql.sock
