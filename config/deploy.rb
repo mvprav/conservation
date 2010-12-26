@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + "/capistrano_database_yml"
 
 set :application, "conservation"
-set :user, "conserva"
+set :user, "root"
 set :server, "conservationthreats.org"
 
 set :repository,  "git://github.com/mvprav/conservation.git"
