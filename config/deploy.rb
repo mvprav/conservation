@@ -12,11 +12,11 @@ set :branch, "master"
 set :use_sudo, false
 
 set :keep_releases, 5
-set :deploy_to, "/home/#{user}/#{application}" 
+set :deploy_to, "/srv/www/conservationthreats.org/application" 
 
-role :web, '74.63.4.11'                           # Your HTTP server, Apache/etc
-role :app, '74.63.4.11'                           # This may be the same as your `Web` server
-role :db, '74.63.4.11' , :primary => true # This is where Rails migrations will run
+role :web, '68.233.10.40'                           # Your HTTP server, Apache/etc
+role :app, '68.233.10.40'                           # This may be the same as your `Web` server
+role :db, '68.233.10.40' , :primary => true # This is where Rails migrations will run
 
 namespace :deploy do
     [:start, :stop].each do |t|
@@ -26,7 +26,7 @@ namespace :deploy do
 
     desc "Restarting mod_rails with restart.txt"
     task :restart, :roles => :app, :except => { :no_release => true } do
-        run "touch /home/#{user}/#{application}/current/tmp/restart.txt"
+        run "touch /srv/www/conservationthreats.org/application/current/tmp/restart.txt"
     end
 end
 
