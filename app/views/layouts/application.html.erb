@@ -48,6 +48,12 @@ _gaq.push(['_trackPageview']);
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+if ($.browser.msie) {
+	if ($.browser.version < 8) {
+		alert("You are using Internet Explorer version less than 8. Kindly upgrade to IE8 or use Firefox.");
+	}
+ }
+
 </script>
 </html>
 
