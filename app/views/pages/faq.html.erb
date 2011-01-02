@@ -1,15 +1,26 @@
 <div id="Faq-user-display" class="rounded-10">
 <h2>Frequently Asked Questions</h2><a>To be Updated Shortly</a>
-<br>
-<div id="faqbox" class="rounded-10">
-<p>
-<b>1. How can the threats be stopped or curbed?</b><br>
-Threats to wildlife is a serious concern for conservationists and wildlife mangers. Since most threats have indirect and long term impact and occur in large, sometimes inaccessible areas of the forests it is difficult to detect. Awareness and support to conservation activities and reporting a detected threat so that action is taken against it, is a way of curbing such threats.</p>
+
+<div id="faqSearch"></div>
+<ul id="faqList">
+<li>
+   <p class='question'>How can the threats be stopped or curbed?</p>
+   <div class='answer'>
+     <p>Threats to wildlife is a serious concern for conservationists and wildlife mangers. Since most threats have indirect and long term impact and occur in large, sometimes inaccessible areas of the forests it is difficult to detect. Awareness and support to conservation activities and reporting a detected threat so that action is taken against it, is a way of curbing such threats.</p>
+     <p class='tags'>a tag, another tag, more tags</p>
+   </div>
+</li>
+
 </div>
-<div id="faqbox" class="rounded-10">
-<p>
-<b>2. Whom to contact when a threat is detected?</b><br>
-A detected threat can be reported directly to the local Range Forest Officer or Deputy Conservator of Forests of the respective forest division. Conservation organisations that work in the region and/ or the local media can also be contacted to report a threat. 
-</p>
+
+
 </div>
-</div>
+
+<script type="text/javascript">
+$('#faqList').simpleFAQ({
+  allowSearch: true,
+  searchNode: '#faqSearch',
+  minSearchScore: 0.5,
+  sortSearch: true
+});
+</script>
