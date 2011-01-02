@@ -9,7 +9,7 @@
 #faqList .simpleFAQHover { color: #060; }
 #faqList .answer {
   margin-left: 1em;
-  border: 1px solid #66c;
+  border: 2px solid #f2f2f2;
   padding: 0.4em;
 }
 .tags { font-size: 0.7em; color: #999; }
