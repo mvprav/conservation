@@ -13,3 +13,18 @@
   padding: 0.4em;
 }
 .tags { font-size: 0.7em; color: #999; }
+
+#faqList1 li { list-style: none; }
+#faqList1 .question {
+  padding-left: 0px;
+  background: transparent url('../images/plus.png') left center no-repeat; 
+}
+#faqList1 li.simpleFAQShowing .question {
+  background: transparent url('../images/minus.png') left center no-repeat;
+}
+#faqList1 .simpleFAQHover { color: #060; }
+#faqList1 .answer {
+  margin-left: 1em;
+  border: 0px solid #f2f2f2;
+  padding: 0.4em;
+}
