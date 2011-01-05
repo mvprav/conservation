@@ -35,6 +35,10 @@
 	  <%=f.text_field :video,:class=>'width required' %>
 	</li>
 	<li>
+	  <%=f.label :newslink,'News Link',:class=>'name'%>
+	  <%=f.text_field :newslink,:class=>'width required' %>
+	</li>
+	<li>
 	  <label for="Submit" class="name">&nbsp;</label>
 	  <%=f.submit "Submit"%>
 	  <%=f.hidden_field :lat %>

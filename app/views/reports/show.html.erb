@@ -23,12 +23,17 @@
               <label class="name">Report Description</label>
               <p class="rounded-5 "><%=@report.description%></p>
             </li>
-			<li>
-				
-              <label class="name">Video Link</label> </br>
-			  <p class="rounded-5 ">
-              <a href="<%=@report.video%>" target="_blank"><%=@report.video%></a>
-			  </p>
+	    <li>
+	      <label class="name">Video Link</label> </br>
+	      <p class="rounded-5 ">
+		<a href="<%=@report.video%>" target="_blank"><%=@report.video%></a>
+	      </p>
+            </li>
+	    <li>
+	      <label class="name">News Link</label> </br>
+	      <p class="rounded-5 ">
+		<a href="<%=@report.video%>" target="_blank"><%=@report.newslink%></a>
+	      </p>
             </li>
 	    <% if @report.user==current_user || admin?%>
 	    <li>
