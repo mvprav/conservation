@@ -34,7 +34,7 @@ config.action_mailer.delivery_method = :test
   config.gem 'cucumber', :lib => false
   config.gem 'cucumber-rails', :lib => false
   config.gem 'webrat', :lib => false
-  config.gem 'ZenTest', :lib => false
+ # config.gem 'ZenTest', :lib => false
   config.gem 'database_cleaner', :lib => false		
-  config.gem "sqlite3-ruby", :lib => "sqlite3", :version=>">=1.3.1"
+
   config.gem "will_paginate", :lib => false#, :version => ">= 2.3.14"

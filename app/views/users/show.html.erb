@@ -1,8 +1,16 @@
 <div id="Sign-up-display" class="rounded-10">
 <table> 
+  <tr>
+    <td>
+      <H3><strong>First Name</strong>&nbsp;</H3>
+    </td> 
+    <td>
+      <H4><%= h @user.firstname%></H4>
+    </td>
+  </tr> 
   <tr> 
     <td> 
-      <H3><strong>Name:</strong>&nbsp;</H3>
+      <H3><strong>Last Name:</strong>&nbsp;</H3>
     </td>
     <td>
       <H4><%= h @user.name %><br /> </H4>
@@ -14,6 +22,46 @@
     </td> 
     <td>
       <H4><%= h @user.email%></H4>
+    </td>
+  </tr> 
+  <tr>
+    <td>
+      <H3><strong>Phone Number</strong>&nbsp;</H3>
+    </td> 
+    <td>
+      <H4><%= h @user.phone_number%></H4>
+    </td>
+  </tr> 
+  <tr>
+    <td>
+      <H3><strong>Address</strong>&nbsp;</H3>
+    </td> 
+    <td>
+      <H4><%= h @user.address%></H4>
+    </td>
+  </tr> 
+  <tr>
+    <td>
+      <H3><strong>City</strong>&nbsp;</H3>
+    </td> 
+    <td>
+      <H4><%= h @user.city%></H4>
+    </td>
+  </tr> 
+  <tr>
+    <td>
+      <H3><strong>Postal Code</strong>&nbsp;</H3>
+    </td> 
+    <td>
+      <H4><%= h @user.postal_code%></H4>
+    </td>
+  </tr> 
+  <tr>
+    <td>
+      <H3><strong>Country</strong>&nbsp;</H3>
+    </td> 
+    <td>
+      <H4><%= h @user.country%></H4>
     </td>
   </tr> 
   <tr>

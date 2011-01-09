@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pp'
 
 describe User do
   before(:each) do
@@ -6,7 +7,14 @@ describe User do
       :name=>"Example User",
       :email=>"user@example.com",
       :password=>"password",
-      :password_confirmation=>"password"
+      :password_confirmation=>"password",
+      :firstname=>"firstname",
+      :phone_number=>"9741498366",
+      :address=>"karthik nagar",
+      :city=>"bangalore",
+      :state=>"karnataka",
+      :postal_code=>"560037",
+      :country=>"india"
     }
   end
 
@@ -47,6 +55,46 @@ describe User do
     user_with_duplicate_email=User.new(@attr.merge(:email=>@attr[:email].upcase))
     user_with_duplicate_email.should_not be_valid
   end 
+
+  it "should require first name" do
+    user_without_firstname=User.new(@attr.merge(:firstname=>''))
+    user_without_firstname.should_not be_valid
+  end
+
+  it "should require phone number" do
+     user = User.new(@attr.merge(:phone_number=>''))
+    user.should_not be_valid
+  end
+
+  it "should not valid if phone number constsist any thing other than digits" do
+    user = User.new(@attr.merge(:phone_number=>'12345678asd'))
+    user.should_not be_valid
+  end
+
+  it "should require phone number of 10 digits" do
+    user = User.new(@attr.merge(:phone_number=>'12345678'))
+    user.should_not be_valid
+  end
+
+  it "should require address" do
+    user = User.new(@attr.merge(:address=>nil))
+    user.should_not be_valid
+  end
+
+  it "should require city" do
+    user = User.new(@attr.merge(:city=>nil))
+    user.should_not be_valid
+  end
+
+  it "should require postal code" do
+    user = User.new(@attr.merge(:postal_code=>nil))
+    user.should_not be_valid
+  end
+
+  it "should require country" do
+     user = User.new(@attr.merge(:country=>nil))
+    user.should_not be_valid
+  end
 
   describe "password validation" do
     it "should require password" do

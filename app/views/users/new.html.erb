@@ -4,7 +4,11 @@
 <%=f.error_messages%>
 <br></br>
 <div class="field">
-  <h3><%=f.label :name%> <br/></h3>
+  <h3><%=f.label :first_name%> <br/></h3>
+  <%=f.text_field :firstname%>
+</div>
+<div class="field">
+  <h3><%=f.label :last_name%> <br/></h3>
   <%=f.text_field :name%>
 </div>
 <div class="field">
@@ -18,6 +22,26 @@
 <div class="field">
   <h3><%=f.label :password_confirmation%><br/></h3>
   <%=f.password_field :password_confirmation%>
+</div>
+<div class="field">
+  <h3><%=f.label :phone_number%> <br/></h3>
+  <%=f.text_field :phone_number%>
+</div>
+<div class="field">
+  <h3><%=f.label :address%> <br/></h3>
+  <%=f.text_field :address%>
+</div>
+<div class="field">
+  <h3><%=f.label :city%> <br/></h3>
+  <%=f.text_field :city%>
+</div>
+<div class="field">
+  <h3><%=f.label :postal_code%> <br/></h3>
+  <%=f.text_field :postal_code%>
+</div>
+<div class="field">
+  <h3><%=f.label :country%> <br/></h3>
+  <%=f.text_field :country%>
 </div>
 <br></br>
 <div class="action">
