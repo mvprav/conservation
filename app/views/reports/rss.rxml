@@ -1,0 +1,17 @@
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+  xml.channel do
+        xml.title       "conservationthreats.org reports"
+        xml.link        url_for :only_path => false, :controller => 'reports'
+        xml.description "conservationthreats.org Recently reported threats"
+
+        @reports.each do |report|
+          xml.item do
+            xml.title       report.title
+            xml.link        url_for :only_path => false, :controller => 'reports', :action => 'show', :id => report.id
+            xml.description report.description
+            xml.guid        url_for :only_path => false, :controller => 'reports', :action => 'show', :id => report.id
+          end
+        end
+
+  end
+end

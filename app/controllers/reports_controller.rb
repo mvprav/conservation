@@ -18,6 +18,12 @@ class ReportsController < ApplicationController
 
   end
 
+  def rss
+    @reports = Report.find(:all, :order => "created_at DESC", :limit => 10)
+    render :layout => false
+    response.headers["Content-Type"] = "application/xml; charset=utf-8"
+  end
+
   def index
     @locations=Location.find(:all)
     @categories=Category.find(:all)

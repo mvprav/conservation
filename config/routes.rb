@@ -12,6 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.understandthreats_main '/understandthreats', :controller=>'understandthreats', :action=>'page'
   map.pages '/pages/:name', :controller=>'pages', :action=>'show'
   map.reports_json '/reports_json', :controller=>'reports',:action=>'reports_json'
+  map.reports_rss '/reports_rss', :controller=>'reports',:action=>'rss'
 
 
  
