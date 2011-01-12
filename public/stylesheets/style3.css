@@ -500,7 +500,6 @@ a.active {
 #report-filter input, #report-filter textarea, #report-filter select {
 	background-color: #f2f2f2;
 	color: #666;
-	border: 0px solid #b9b9b9;
 }
 
 #report-filter #submit {
@@ -602,7 +601,6 @@ a.active {
 #contact input, #contact textarea, #contact select {
 	background-color: #f2f2f2;
 	color: #666;
-	border: 0px solid #b9b9b9;
 }
 
 #contact #submit {

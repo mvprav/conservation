@@ -960,7 +960,7 @@ a.active:hover {
 }
 
 #contact select {
-	padding: 4px;
+	padding: 0px;
 }
 
 #contact option {
@@ -1015,7 +1015,7 @@ a.active:hover {
 
 
 #contact input.width1, #contact select.width {
-	width:262px;
+	width:266px;
 }
 
 
