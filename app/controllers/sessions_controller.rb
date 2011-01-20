@@ -13,7 +13,7 @@ include SessionsHelper
       render :new
     else
       sign_in user
-      redirect_back_to user
+      redirect_to new_report_path
     end
   end
   

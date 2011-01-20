@@ -40,7 +40,7 @@
 	<tbody>
 	  <%@reports.each do |report|%>
 	  <tr class="even">
-	    <td class="td-6"><%=link_to report.title_summary,report_path(report)%></td>
+	    <td class="td-6"><%=link_to report.title_summary,report_path(report),{:target=>'_blank'}%></td>
 	    <td class="td-7"><%=report.location.name%></td>
 	    <td class="td-8"><%=report.incident_date%></td>
 	    <td class="td-9"><%=report.category.name%></td>                                                
