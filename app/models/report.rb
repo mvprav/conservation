@@ -6,8 +6,6 @@ class Report < ActiveRecord::Base
   validates_presence_of :location
   validates_presence_of :incident_date
   validates_presence_of :user
-  validates_presence_of :lat,:message=>"Please specify the location in the map."
-  validates_presence_of :lng,:message=>"Please attach the picture again incase added."
   belongs_to :user
   belongs_to :category
   belongs_to :location
@@ -16,6 +14,11 @@ class Report < ActiveRecord::Base
   def title_summary
     title.shorten
   end
+
+  def validate
+       errors.add_to_base "Please specify location in the map and attach the picture again incase added." if lat.blank? and lng.blank?
+  end
+
 end
 
 
