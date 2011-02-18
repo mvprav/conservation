@@ -43,6 +43,7 @@ Rails::Initializer.run do |config|
   config.gem "authlogic", :lib => false, :version => ">= 2.1.5"
   config.gem 'paperclip', :version=>"2.3.3"
   config.gem "faker", :lib => false, :version => ">= 0.3.1"
+  config.gem "newrelic_rpm"
 
 end
 require "will_paginate"
