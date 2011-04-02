@@ -2,6 +2,12 @@ Factory.sequence(:email){|n| "a#{n}@a.com"}
 
 Factory.define :user do |user|
   user.name "praveen"
+  user.firstname "mvp"
+  user.address :address
+  user.city :Bangalore
+  user.country :India
+  user.phone_number "1231231231"
+  user.postal_code "560001"
   user.email {Factory.next(:email)}
   user.password "password"
   user.password_confirmation "password"  
