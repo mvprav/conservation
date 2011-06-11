@@ -99,8 +99,8 @@ describe ReportsController do
 
       it "should save photos uploaded along with report" do
         post :create, :report=>@attr,:photos=>{
-          "photo_0" => File.new(RAILS_ROOT + '/spec/fixtures/images/button.png'),
-          "photo_1"=>File.new(RAILS_ROOT + '/spec/fixtures/images/button.png')
+          "photo_0" => File.new("#{Rails.root}/spec/fixtures/images/button.png"),
+          "photo_1"=>File.new("#{Rail.root}/spec/fixtures/images/button.png")
         }
         @report.incident_images.length.should == 2
       end 

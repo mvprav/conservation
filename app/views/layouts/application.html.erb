@@ -3,56 +3,53 @@
   <head> 
     <title><%=title%></title> 
     <%= render 'layouts/stylesheets'%>
-	<link rel="shortcut icon" href="../images/logo_browser.gif"> 
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="reports_rss" />
-	    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<meta name="description" content="ConservationThreats: Data about wildlife threats"> 
-		<meta name="keywords" content="ConservationThreat, Conservation Threat, wildlife threats, india, karnataka, poaching, hunting, mining, cattle , roadkill, fragmentation, forestfire, livestock, timber smuggling,excessive tourism, wildlife conservation"> 
-                <meta name="google-site-verification" content="iwJrOZ9KtoB7MHklbmDdbJFiXZtZ4SGIstmbTqli3ek" />
-</head> 
+    <link rel="shortcut icon" href="../images/logo_browser.gif"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="reports_rss" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="ConservationThreats: Data about wildlife threats"> 
+    <meta name="keywords" content="ConservationThreat, Conservation Threat, wildlife threats, india, karnataka, poaching, hunting, mining, cattle , roadkill, fragmentation, forestfire, livestock, timber smuggling,excessive tourism, wildlife conservation"> 
+    <meta name="google-site-verification" content="iwJrOZ9KtoB7MHklbmDdbJFiXZtZ4SGIstmbTqli3ek" />
+  </head> 
   <body> 
     <div id="wrapper">
       <%= render 'layouts/headers'%>
       <div id="main">
-	<div id="main-inner">
-	  <% flash.each do |key, value|%>
-	  <div class="flash <%= key %>"><%= value%></div> 
-	  <% end %>
-	  <%= yield %>
-           <div id="footer">
-<div>
-<table border="0" align = "right">
-<tr>
-<td>
-</td>
-<td>
-</td>
-<td>&copy;2010 Conservation Threats</td>
-</tr>
-</table>
-</div>
-	   </div>
-	  <%= debug(params) if Rails.env.development? %>
-	</div>
+        <div id="main-inner">
+          <% flash.each do |key, value|%>
+            <div class="flash <%= key %>"><%= value%></div> 
+          <% end %>
+          <%= yield %>
+          <div id="footer">
+            <div>
+              <table border="0" align = "right">
+                <tr>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                  <td>&copy;2010 Conservation Threats</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <%= debug(params) if Rails.env.development? %>
+        </div>
       </div>
     </div>
   </body>
   <script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-19958395-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19958395-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
 if ($.browser.msie) {
-	if ($.browser.version < 8) {
-		alert("You are using Internet Explorer version less than 8. The website is best compatible with Firefox, Chrome, IE8 and above.");
-	}
- }
-
+  if ($.browser.version < 8) {
+    alert("You are using Internet Explorer version less than 8. The website is best compatible with Firefox, Chrome, IE8 and above.");
+  }
+}
 </script>
 </html>
-

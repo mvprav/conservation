@@ -2,7 +2,7 @@ require 'spec_helper'
 describe IncidentImage do
   before(:each) do
     @attr={
-      :image=>File.new(RAILS_ROOT + '/spec/fixtures/images/button.png'),
+      :image=>File.new("#{Rails.root}/spec/fixtures/images/button.png"),
       :report=>Factory(:report)
       
     }

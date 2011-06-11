@@ -1,6 +1,8 @@
+.bundle
+db/*.sqlite3
 log/*.log
-tmp/*
-tmp/**/*
+tmp/
+.sass-cache/
 doc/api
 doc/app
 db/*.sqlite3
