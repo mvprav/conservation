@@ -1,8 +1,8 @@
 <div id="submit-report" class="rounded-10">   
   <div id="contact-box"><h2>Submit a report</h2>        
   <div id="contact" class="rounded-10">
-    <%=error_messages_for :report%>
-    <% form_for(@report, :html=>{:multipart=>true})do |f|%>
+    <%= render "shared/error_messages", :target => @report %>
+    <%= form_for(@report, :html=>{:multipart=>true}) do |f|%>
     <fieldset>
       <ol>
 	<li>

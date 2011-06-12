@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
   
   def remember_me!
     self.remember_token=secure_hash("#{id}--#{Time.now.utc}")
-    save_without_validation
+    save(:validate => false)
   end
 
   def self.authenticate(email,submitted_password)
