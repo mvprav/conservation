@@ -19,3 +19,4 @@ public/system
 db/schema.rb
 config/database.yml
 nbproject
+spec/ruby
