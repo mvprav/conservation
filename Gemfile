@@ -25,7 +25,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem "authlogic", ">= 2.1.5"
-gem 'paperclip', "2.3.3"
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "faker", ">= 0.3.1"
 group :test do
   gem 'rspec-rails', '>= 2.5'

@@ -1,7 +1,7 @@
 <div id="Edit-user-display" class="rounded-10">
 <h2 id="alpha">Edit User</h2>
-<% form_for @user do |f|%>
-<%= f.error_messages %>
+<%= form_for(@user) do |f|%>
+<%= render "shared/error_messages", :target => @user %>
 <br></br>
 <div class="field">
   <h3><%=f.label :first_name%> <br/></h3>
