@@ -91,6 +91,7 @@ describe Report do
     it "should not create report without google map locations" do
       report_without_googlemap_locations = Report.new(@valid_attributes.merge(:lat=>'',:lng=>''))
       report_without_googlemap_locations.should_not be_valid
+      report_without_googlemap_locations.errors.size.should == 1 
     end 
   end
 

@@ -5,8 +5,8 @@ class Report < ActiveRecord::Base
   validates_presence_of :location
   validates_presence_of :incident_date
   validates_presence_of :user
-  validates_each :lat, :lng do |record, attr, value|
-    record.errors[:base] = 'Please specify location in the map and attach the picture again incase added.' if value.blank?
+  validate :lat, :lng do |record|
+    record.errors[:base] = 'Please specify location in the map and attach the picture again incase added.' if record.lat.blank? || record.lng.blank?
   end
   belongs_to :user
   belongs_to :category
