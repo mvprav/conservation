@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe SessionsController do
-  integrate_views
+  render_views
 
   #Delete these examples and add some real ones
   it "should use SessionsController" do
@@ -17,7 +17,7 @@ describe SessionsController do
     it "should have the right title" do
       get 'new'
       puts response
-      response.should have_tag("title",/sign in/i)
+      response.should have_selector("title",/sign in/i)
     end 
   end
   
@@ -38,7 +38,7 @@ describe SessionsController do
 
       it "should have right title" do
         post :create ,:session =>@attr
-        response.should have_tag("title",/Sign in/i)
+        response.should have_selector("title",/Sign in/i)
       end 
     end
     

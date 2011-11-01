@@ -2,7 +2,8 @@ require 'spec_helper'
 require 'pp'
 
 describe ReportsController do
-  integrate_views
+  render_views
+
   describe "Report creation get :new" do
     before(:each) do
       @user=Factory(:user)
@@ -20,7 +21,7 @@ describe ReportsController do
 
     it "should provide right title" do
       get :new 
-      response.should have_tag("title",/Report Incident/)
+      response.should have_selector("title", :content => 'Report Incident')
     end
 
     describe "Refrence data" do
@@ -61,7 +62,7 @@ describe ReportsController do
 
       it "should have right title" do
         post :create, :report=>@attr
-        response.should have_tag("title",/Report Incident/)
+        response.should have_selector("title",/Report Incident/)
       end 
 
       it "should render 'new' page" do
@@ -132,7 +133,7 @@ describe ReportsController do
 
     it "should have right title" do
       get :show, :id=>1
-      response.should have_tag("title",/#{@report.title}/)
+      response.should have_selector("title",/#{@report.title}/)
     end
   end
 
@@ -169,17 +170,16 @@ describe ReportsController do
 
     it "should have right title" do
       get :index
-      response.should have_tag("title",/Reports/i)
+      response.should have_selector("title",/Reports/i)
     end 
 
     it "should load reports" do  
       get :index
-      response.should have_tag("div.pagination")
-      response.should have_tag("span", "&laquo; Previous")
-      response.should have_tag("span", "1")
-      response.should have_tag("a[href=?]", "/reports?&amp;page=2", "2")
-      response.should have_tag("a[href=?]", "/reports?&amp;page=2", "Next &raquo;")
-      
+      response.should have_selector("div.pagination")
+      response.should have_selector("span", "&laquo; Previous")
+      response.should have_selector("span", "1")
+      response.should have_selector("a[href=?]", "/reports?&amp;page=2", "2")
+      response.should have_selector("a[href=?]", "/reports?&amp;page=2", "Next &raquo;")
     end
   end
 

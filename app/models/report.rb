@@ -1,4 +1,3 @@
-require 'pp'
 class Report < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :description 
@@ -6,6 +5,9 @@ class Report < ActiveRecord::Base
   validates_presence_of :location
   validates_presence_of :incident_date
   validates_presence_of :user
+  validates_each :lat, :lng do |record, attr, value|
+    record.errors[:base] = 'Please specify location in the map and attach the picture again incase added.' if value.blank?
+  end
   belongs_to :user
   belongs_to :category
   belongs_to :location
@@ -15,17 +17,11 @@ class Report < ActiveRecord::Base
     title.shorten
   end
 
-  def validate
-       errors.add_to_base "Please specify location in the map and attach the picture again incase added." if lat.blank? and lng.blank?
-  end
-
 end
-
 
 class String
   def shorten (count = 42)
     string=to_s()
-    pp string
     if string.length >= count 
       shortened = string[0, count-3]
       shortened.concat('...')
@@ -33,7 +29,7 @@ class String
       string
     end
   end
-  
+
 end
 
 

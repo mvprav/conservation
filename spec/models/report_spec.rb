@@ -87,6 +87,7 @@ describe Report do
       report_without_owner = Report.new(@valid_attributes.merge(:user=>nil))
       report_without_owner.should_not be_valid
     end 
+    
     it "should not create report without google map locations" do
       report_without_googlemap_locations = Report.new(@valid_attributes.merge(:lat=>'',:lng=>''))
       report_without_googlemap_locations.should_not be_valid

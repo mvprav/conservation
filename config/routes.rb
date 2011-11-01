@@ -18,7 +18,8 @@ Conservation::Application.routes.draw do
   match '/understandthreats', :to => 'understandthreats#page', :as => "understandthreats_main"
   match '/pages/:name', :to => 'pages#show', :as => "pages"
   match '/reports_json', :to => 'reports#reports_json', :as => "reports_json"
-  match '/reports_rss', :to => 'reports#rss', :as => "reports_rss"
+  match '/reports_rss', :to => 'reports#rss', :as => "reports_rss", :defaults => { :format => 'rss' }
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

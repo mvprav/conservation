@@ -57,6 +57,8 @@ GEM
     erubis (2.7.0)
     execjs (1.1.2)
       multi_json (~> 1.0)
+    factory_girl (2.1.2)
+      activesupport
     faker (0.9.5)
       i18n (~> 0.4)
     hike (1.0.0)
@@ -138,6 +140,7 @@ PLATFORMS
 DEPENDENCIES
   authlogic (>= 2.1.5)
   coffee-script
+  factory_girl
   faker (>= 0.3.1)
   jquery-rails
   json

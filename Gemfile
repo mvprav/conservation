@@ -29,6 +29,7 @@ gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "faker", ">= 0.3.1"
 group :test do
   gem 'rspec-rails', '>= 2.5'
+  gem 'factory_girl'
 end
 
 group :development do
