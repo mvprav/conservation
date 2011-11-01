@@ -16,8 +16,7 @@ describe SessionsController do
     end
     it "should have the right title" do
       get 'new'
-      puts response
-      response.should have_selector("title",/sign in/i)
+      response.should have_selector("title", :content => "Sign in")
     end 
   end
   
@@ -38,7 +37,7 @@ describe SessionsController do
 
       it "should have right title" do
         post :create ,:session =>@attr
-        response.should have_selector("title",/Sign in/i)
+        response.should have_selector("title", :content => "Sign in")
       end 
     end
     

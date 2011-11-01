@@ -62,7 +62,7 @@ describe ReportsController do
 
       it "should have right title" do
         post :create, :report=>@attr
-        response.should have_selector("title",/Report Incident/)
+        response.should have_selector("title", :content => "Report Incident")
       end 
 
       it "should render 'new' page" do
@@ -101,7 +101,7 @@ describe ReportsController do
       it "should save photos uploaded along with report" do
         post :create, :report=>@attr,:photos=>{
           "photo_0" => File.new("#{Rails.root}/spec/fixtures/images/button.png"),
-          "photo_1"=>File.new("#{Rail.root}/spec/fixtures/images/button.png")
+          "photo_1"=>File.new("#{Rails.root}/spec/fixtures/images/button.png")
         }
         @report.incident_images.length.should == 2
       end 
@@ -133,7 +133,7 @@ describe ReportsController do
 
     it "should have right title" do
       get :show, :id=>1
-      response.should have_selector("title",/#{@report.title}/)
+      response.should have_selector("title", :content => "#{@report.title}")
     end
   end
 
@@ -170,7 +170,7 @@ describe ReportsController do
 
     it "should have right title" do
       get :index
-      response.should have_selector("title",/Reports/i)
+      response.should have_selector("title", :content => "Reports")
     end 
 
     it "should load reports" do  

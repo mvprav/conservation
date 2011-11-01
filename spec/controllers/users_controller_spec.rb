@@ -10,7 +10,7 @@ describe UsersController do
     end
     it "should have right title" do
       get :new
-      response.should have_title("title",/Sign up/)
+      response.should have_selector("title", :content => "Sign up")
     end 
   end
 
@@ -25,7 +25,7 @@ describe UsersController do
     end
     it "should have the right title" do
       get :show, :id=>@user
-      response.should have_selector("title",/#{@user.name}/)
+      response.should have_selector("title", :content => "#{@user.name}")
     end 
   end
 
@@ -42,7 +42,7 @@ describe UsersController do
 
       it "should have right title" do
         post :create, :user=>@attr
-        response.should have_selector("title",/Sign up/)
+        response.should have_selector("title", :content => "Sign up")
       end 
 
       it "should render 'new' page" do
@@ -90,7 +90,7 @@ describe UsersController do
 
     it "should have right title" do
       get :edit, :id=>@user
-      response.should have_selector("title",/edit user/i)
+      response.should have_selector("title", :content => "Edit User")
     end 
   end
 
@@ -113,7 +113,7 @@ describe UsersController do
 
       it "should have right title" do
         put :update , :id=>@user,:user=>{ }
-        response.should have_selector("title",/Edit user/i)
+        response.should have_selector("title", :content => "Edit User")
       end 
     end
     describe "Success" do
