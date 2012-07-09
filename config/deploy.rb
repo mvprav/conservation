@@ -14,9 +14,9 @@ set :use_sudo, false
 set :keep_releases, 5
 set :deploy_to, "/srv/www/conservationthreats.org/application" 
 
-role :web, '68.233.10.40'                           # Your HTTP server, Apache/etc
-role :app, '68.233.10.40'                           # This may be the same as your `Web` server
-role :db, '68.233.10.40' , :primary => true # This is where Rails migrations will run
+role :web, '75.98.32.224'                           # Your HTTP server, Apache/etc
+role :app, '75.98.32.224'                           # This may be the same as your `Web` server
+role :db, '75.98.32.224' , :primary => true # This is where Rails migrations will run
 
 namespace :deploy do
     [:start, :stop].each do |t|
