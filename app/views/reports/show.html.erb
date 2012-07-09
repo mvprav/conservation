@@ -1,3 +1,13 @@
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=276332442474961";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="fb-root"></div>
 <%=error_messages_for :image%>
 <div id="report-detail" class="rounded-10">           
   <div id="contact-box"><h2>Report Details</h2>        
@@ -42,7 +52,9 @@
 	    <%end%>
 	    <%=hidden_field_tag(:lat,@report.lat)%>
 	    <%=hidden_field_tag(:lng,@report.lng)%>
-	  </ol>	
+	  </ol>
+          <fb:like send="true" width="450" show_faces="true"></fb:like>
+          <a href="https://twitter.com/share" class="twitter-share-button" via="@conservationthr">Tweet</a>
 	</div>
   </div>
   <div id="pic-box">

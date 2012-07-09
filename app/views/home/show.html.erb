@@ -1,5 +1,20 @@
 <%= render 'sidebar' %>
+
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=407824409270225";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <div id="main-display-box" class="rounded-10">
   <%= render 'maininfo' %>
   <%= render 'mainreport' %>
-</div
+  <fb:like send="true" width="450" show_faces="true"></fb:like>
+  <div>
+    <a href="https://twitter.com/share" class="twitter-share-button" via="@conservationthr">Tweet</a>
+    <a href="https://twitter.com/conservationthr" class="twitter-follow-button" data-show-count="false">Follow @conservationthr</a>
+    <div id="fb-root"></div>
+  </div>
+</div>
