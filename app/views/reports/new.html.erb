@@ -10,10 +10,6 @@
 	  <%=f.select(:category_id,@categories.map{|c|[c.name,c.id]},{:include_blank=>false},:class=>'width required')%>
 	</li>
 	<li>
-	  <%=f.label :location, 'Select Location*', :class=>'name'%>
-	  <%=f.select(:location_id,@locations.map{|l|[l.name,l.id]},{:include_blank=>false},:class=>'width required')%>
-	</li>
-	<li>
 	  <%=f.label :title,'Report Title*',:class=>'name'%>
 	  <%=f.text_field :title,:class=>'width required' %>
 	</li>
@@ -54,6 +50,7 @@
 </div>
     </div>
   <div id="submit-map-display">
+    <input id="searchTextField" type="text" size="50">
       <div id="map" class="rounded-10">
      </div>
   </div> 
@@ -64,8 +61,8 @@
 <script type="text/javascript">
   
 $(document).ready(function() {
-   
-    $("#report_incident_date").datepicker();
+
+    $("#report_incident_date").datepicker({dateFormat: 'D, dd M yy'});
     $("#files_list").multiPhotoUpload();
     $("#map").mapWithSingleMarker()
   });

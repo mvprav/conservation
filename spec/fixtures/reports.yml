@@ -1,3 +1,23 @@
+# == Schema Information
+#
+# Table name: reports
+#
+#  id            :integer          not null, primary key
+#  title         :string(255)
+#  description   :text(255)
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  category_id   :integer
+#  location_id   :integer
+#  incident_date :date
+#  lat           :float
+#  lng           :float
+#  user_id       :integer
+#  video         :string(255)
+#  newslink      :string(255)
+#  address       :string(255)
+#
+
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
@@ -7,22 +27,4 @@ one:
 two:
   title: MyString
   description: 
-
-
-# == Schema Information
-#
-# Table name: reports
-#
-#  id            :integer         not null, primary key
-#  title         :string(255)
-#  description   :string(255)
-#  created_at    :datetime
-#  updated_at    :datetime
-#  category_id   :integer
-#  location_id   :integer
-#  incident_date :date
-#  lat           :float
-#  lng           :float
-#  user_id       :integer
-#
 

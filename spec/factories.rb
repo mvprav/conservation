@@ -1,3 +1,4 @@
+require 'factory_girl'
 FactoryGirl.define do
   sequence(:email){|n| "a#{n}@a.com"}
 
@@ -9,7 +10,7 @@ FactoryGirl.define do
     user.country :India
     user.phone_number "1231231231"
     user.postal_code "560001"
-    user.email { Factory.next(:email) }
+    user.email { FactoryGirl.generate(:email) }
     user.password "password"
     user.password_confirmation "password"  
   end

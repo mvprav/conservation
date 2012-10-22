@@ -1,5 +1,5 @@
 require 'filter_condition'
-require 'pp'
+require 'ap'
 class ReportsController < ApplicationController
   include SessionsHelper
   before_filter :authenticate , :only=>[:new, :create, :destroy]
@@ -44,10 +44,13 @@ class ReportsController < ApplicationController
   end
   
   def create
+
     @report=Report.new(params[:report])
     @report.category=Category.find(params[:report][:category_id])
     @report.location=Location.find(params[:report][:location_id])
     @title="Report Incident"
+    @report.update_attribute(:incident_date,params[:report][:incident_date])
+    ap @report.inspect
     @report.user=current_user
     if @report.save
       if params[:photos] != nil 

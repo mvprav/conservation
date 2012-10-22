@@ -36,7 +36,7 @@ module SessionsHelper
   end
 
   def store_location
-    session[:return_to]=request.request_uri
+    session[:return_to]=request.url
   end
 
   def redirect_back_to(default)

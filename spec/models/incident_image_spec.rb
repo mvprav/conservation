@@ -1,9 +1,24 @@
+# == Schema Information
+#
+# Table name: incident_images
+#
+#  id                 :integer          not null, primary key
+#  image_file_name    :string(255)
+#  image_content_type :string(255)
+#  photo_file_size    :integer
+#  image_updated_at   :datetime
+#  report_id          :integer
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  images_file        :binary
+#
+
 require 'spec_helper'
 describe IncidentImage do
   before(:each) do
     @attr={
       :image=>File.new("#{Rails.root}/spec/fixtures/images/button.png"),
-      :report=>Factory(:report)
+      :report=>FactoryGirl.create(:report)
       
     }
   end
@@ -33,28 +48,13 @@ describe IncidentImage do
     it "should respond to report" do
       @incident_image=IncidentImage.new(@attr)
       @incident_image.should respond_to :report
-    end 
+    end
+
     it "should have right association" do
-      @report=Factory(:report)
+      @report=FactoryGirl.create(:report)
       @incident_image=@report.incident_images.new(@attr.merge(:report=>nil))
       @incident_image.report.should == @report
       @incident_image.report.id.should == @report.id
     end 
   end
 end
-
-# == Schema Information
-#
-# Table name: incident_images
-#
-#  id                 :integer         not null, primary key
-#  image_file_name    :string(255)
-#  image_content_type :string(255)
-#  image_file_size    :integer
-#  image_updated_at   :datetime
-#  report_id          :integer
-#  created_at         :datetime
-#  updated_at         :datetime
-#  images_file        :binary
-#
-

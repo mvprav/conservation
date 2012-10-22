@@ -1,3 +1,23 @@
+# == Schema Information
+#
+# Table name: reports
+#
+#  id            :integer          not null, primary key
+#  title         :string(255)
+#  description   :text(255)
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  category_id   :integer
+#  location_id   :integer
+#  incident_date :date
+#  lat           :float
+#  lng           :float
+#  user_id       :integer
+#  video         :string(255)
+#  newslink      :string(255)
+#  address       :string(255)
+#
+
 require 'spec_helper'
 
 describe Report do
@@ -6,9 +26,9 @@ describe Report do
       :title => "value for title",
       :description => "description",
       :incident_date=>Date.today,
-      :category=>Factory(:category),
-      :location=>Factory(:location),
-      :user=>Factory(:user),
+      :category=>FactoryGirl.create(:category),
+      :location=>FactoryGirl.create(:location),
+      :user=>FactoryGirl.create(:user),
       :lat=>'1.23',
       :lng=>'2.34'
     }
@@ -25,7 +45,7 @@ describe Report do
     end 
 
     it "should associate with right category" do
-      @category=Factory(:category)
+      @category=FactoryGirl.create(:category)
       @report.category=@category
       @report.should be_valid
       @report.category.should==@category
@@ -36,13 +56,13 @@ describe Report do
     end 
 
     it "should associae with right user" do
-      @user=Factory(:user,:email=>"1@1.com")
+      @user=FactoryGirl.create(:user,:email=>"1@1.com")
       @report.user=@user
       @report.user.should==@user
     end 
 
     it "should associate with right location" do
-      @location=Factory(:location)
+      @location=FactoryGirl.create(:location)
       @report.location=@location
       @report.should be_valid
       @report.location.should == @location
@@ -108,22 +128,4 @@ describe Report do
                                                   
   end
 end
-
-
-# == Schema Information
-#
-# Table name: reports
-#
-#  id            :integer         not null, primary key
-#  title         :string(255)
-#  description   :string(255)
-#  created_at    :datetime
-#  updated_at    :datetime
-#  category_id   :integer
-#  location_id   :integer
-#  incident_date :date
-#  lat           :float
-#  lng           :float
-#  user_id       :integer
-#
 

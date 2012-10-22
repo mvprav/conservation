@@ -14,8 +14,6 @@ gem 'railties', "~> 3.2.0"
 
 gem 'therubyracer'
 
-gem 'rake', '>=0.9.2.2'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -28,19 +26,18 @@ gem 'rake', '>=0.9.2.2'
 gem "authlogic", ">= 2.1.5"
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "faker", ">= 0.3.1"
-gem 'rspec-rails', '>= 2.6.1'
-
 group :test do
-
-  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-rails', '>= 2.6.1'
+  gem 'factory_girl'
   gem 'webrat', '0.7.1'
-  gem 'test-unit', '2.5.2'
 end
+
+group :development do
+  gem 'rspec-rails', '>= 2.6.1'
+end
+
 
 
 gem "will_paginate", '>=3.0.pre'
 #gem "newrelic_rpm"
-gem "geocoder"
 
-gem 'awesome_print'
-gem 'mysql'

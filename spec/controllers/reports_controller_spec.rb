@@ -3,14 +3,14 @@ require 'pp'
 
 describe ReportsController do
   render_views
-
   describe "Report creation get :new" do
     before(:each) do
-      @user=Factory(:user)
+      controller.request.host="www.dummy.com"
+      @user=FactoryGirl.create(:user)
       test_sign_in @user
-      @categories_returned=[Factory(:category),Factory(:category,:name=>"name 2")]
+      @categories_returned=[FactoryGirl.create(:category),FactoryGirl.create(:category,:name=>"name 2")]
       Category.should_receive(:find).with(:all).and_return(@categories_returned)
-      @locations_returned=[Factory(:location),Factory(:location,:name=>"location 2")]
+      @locations_returned=[FactoryGirl.create(:location),FactoryGirl.create(:location,:name=>"location 2")]
       Location.should_receive(:find).with(:all).and_return(@locations_returned)
     end
 
@@ -40,7 +40,7 @@ describe ReportsController do
 
   describe "Report POST 'create'" do
     before(:each) do
-      @user=Factory(:user)
+      @user=FactoryGirl.create(:user)
       test_sign_in @user
     end
 
@@ -52,12 +52,12 @@ describe ReportsController do
           :category_id=>1,
           :location_id=>1
         }
-        @categories_returned=[Factory(:category),Factory(:category,:name=>"name 2")]
+        @categories_returned=[FactoryGirl.create(:category),FactoryGirl.create(:category,:name=>"name 2")]
         Category.stub!(:find).with(:all).and_return(@categories_returned)
-        Category.stub!(:find).with(1).and_return(Factory(:category))
-        @locations_returned=[Factory(:location),Factory(:location,:name=>"location 2")]
+        Category.stub!(:find).with(1).and_return(FactoryGirl.create(:category))
+        @locations_returned=[FactoryGirl.create(:location),FactoryGirl.create(:location,:name=>"location 2")]
         Location.stub!(:find).with(:all).and_return(@locations_returned)
-        Location.stub!(:find).with(1).and_return(Factory(:location))
+        Location.stub!(:find).with(1).and_return(FactoryGirl.create(:location))
       end
 
       it "should have right title" do
@@ -78,14 +78,14 @@ describe ReportsController do
           :category_id=>1,
           :location_id=>1
         }
-        @category=Factory(:category)
-        @location=Factory(:location)
-        @report=Factory(:report,:category=>@category,:location=>@location)
+        @category=FactoryGirl.create(:category)
+        @location=FactoryGirl.create(:location)
+        @report=FactoryGirl.create(:report,:category=>@category,:location=>@location)
         @report.should_receive(:save).and_return(true)
 
         Report.stub!(:new).and_return(@report)
-        Category.should_receive(:find).with(1).and_return(@category)
-        Location.should_receive(:find).with(1).and_return(@location)
+        Category.should_receive(:find).with("1").and_return(@category)
+        Location.should_receive(:find).with("1").and_return(@location)
       end
 
       it "should redirect to report show page" do
@@ -120,9 +120,9 @@ describe ReportsController do
         :description=>"some description"
       }
 
-      @report=Factory(:report,:category=>Factory(:category),:location=>Factory(:location))
+      @report=FactoryGirl.create(:report,:category=>FactoryGirl.create(:category),:location=>FactoryGirl.create(:location))
       Report.stub!(:find,@report.id).and_return(@report)
-      @user=Factory(:user)
+      @user=FactoryGirl.create(:user)
       test_sign_in @user
     end
 
@@ -154,12 +154,12 @@ describe ReportsController do
 
   describe "Reports GET All" do
     before(:each) do
-      @category=Factory(:category)
-      @location=Factory(:location)
-      @reports_returned=[Factory(:report,:category=>@category,:location=>@location),
-                         Factory(:report,:title=>"some title",:category=>@category,:location=>@location)]
+      @category=FactoryGirl.create(:category)
+      @location=FactoryGirl.create(:location)
+      @reports_returned=[FactoryGirl.create(:report,:category=>@category,:location=>@location),
+                         FactoryGirl.create(:report,:title=>"some title",:category=>@category,:location=>@location)]
       30.times do
-        @reports_returned << Factory(:report,:category=>@category,:location=>@location)
+        @reports_returned << FactoryGirl.create(:report,:category=>@category,:location=>@location)
       end
       Report.should_receive(:paginate).and_return(@reports_returned.paginate)
     end
@@ -185,12 +185,12 @@ describe ReportsController do
 
   describe "Reports GET JSON" do
     before(:each) do
-      @category=Factory(:category)
-      @location=Factory(:location)
-      @reports_returned=[Factory(:report,:category=>@category,:location=>@location),
-                         Factory(:report,:title=>"some title",:category=>@category,:location=>@location)]
+      @category=FactoryGirl.create(:category)
+      @location=FactoryGirl.create(:location)
+      @reports_returned=[FactoryGirl.create(:report,:category=>@category,:location=>@location),
+                         FactoryGirl.create(:report,:title=>"some title",:category=>@category,:location=>@location)]
       2.times do
-        @reports_returned << Factory(:report,:category=>@category,:location=>@location)
+        @reports_returned << FactoryGirl.create(:report,:category=>@category,:location=>@location)
       end
     end
 
@@ -204,12 +204,12 @@ describe ReportsController do
 
   describe "Filtering of report" do
      before(:each) do
-      @category=Factory(:category)
-      @location=Factory(:location)
-      @reports_returned=[Factory(:report,:category=>@category,:location=>@location),
-                         Factory(:report,:title=>"some title",:category=>@category,:location=>@location)]
+      @category=FactoryGirl.create(:category)
+      @location=FactoryGirl.create(:location)
+      @reports_returned=[FactoryGirl.create(:report,:category=>@category,:location=>@location),
+                         FactoryGirl.create(:report,:title=>"some title",:category=>@category,:location=>@location)]
       2.times do
-        @reports_returned << Factory(:report,:category=>@category,:location=>@location)
+        @reports_returned << FactoryGirl.create(:report,:category=>@category,:location=>@location)
       end
     end
     
@@ -239,12 +239,12 @@ describe ReportsController do
     describe "For Authenticated user" do
       describe "For user not the owner of the report" do
         before(:each) do
-          @wrong_user=Factory(:user,:email=>"wrong_user@abc.com")
+          @wrong_user=FactoryGirl.create(:user,:email=>"wrong_user@abc.com")
           test_sign_in @wrong_user
         end
         
         it "should render report show page with error message" do
-          @report=Factory(:report)
+          @report=FactoryGirl.create(:report)
           Report.stub!(:find,@report.id).and_return(@report)
           delete :destroy , :id=>@report
           response.should redirect_to report_path
@@ -254,12 +254,12 @@ describe ReportsController do
       
       describe "For the owner of the report " do
         before(:each) do
-          @user=Factory(:user)
+          @user=FactoryGirl.create(:user)
           test_sign_in @user
         end
         
         it "should delete the report" do
-          @report=Factory(:report,:user=>@user)
+          @report=FactoryGirl.create(:report,:user=>@user)
           Report.stub!(:find,@report.id).and_return(@report)
           @report.should_receive(:delete)
           delete :destroy , :id=>@report
@@ -269,13 +269,13 @@ describe ReportsController do
 
       describe "For admin user" do
          before(:each) do
-          @user=Factory(:user)
+          @user=FactoryGirl.create(:user)
           test_sign_in @user
         end
         
         it "should delete the report" do
           @user.toggle!(:admin)
-          @report=Factory(:report)
+          @report=FactoryGirl.create(:report)
           Report.stub!(:find,@report.id).and_return(@report)
           @report.should_receive(:delete)
           delete :destroy , :id=>@report
